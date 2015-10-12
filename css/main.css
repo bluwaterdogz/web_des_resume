@@ -252,17 +252,28 @@ li{
 .firstInfo{
 	margin:30px 30px ;
 }
-#profPic:hover{
+.profcont{
+	border:4px solid white;
+	border-radius: 100%;
+	height:300px;
+	width:300px;
+	overflow: hidden;
+	margin:auto;
+
+	-webkit-transition: 500ms;
+	-o-transition: 500ms;
+	transition: 500ms;
+}
+.profcont:hover{
 	transform: scale(1.2);
 }
 #profPic{
 
-	transition: 500ms;
-	border-radius: 100%;
-	margin-top:50px;
-	height:200px;
-	width:200px;
+	height:300px;
+	width:auto;
+
 }
+
 .content{
 	text-align: center;
 	background:white;
@@ -302,6 +313,7 @@ li{
 .divider6{
 	height:80vh;
 	background-image: url("../imgs/forest-6.jpg");
+	padding-top: 15vh;
 }
 .footercontainer{
 	height:20vh;
