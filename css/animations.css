@@ -1,0 +1,43 @@
+.desc{
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+
+.desc.show{
+	-webkit-animation: pulseIn 1s linear;
+    -moz-animation: pulseIn 1s linear;
+    -o-animation: pulseIn 1s linear;
+    animation: pulseIn 1s linear;
+}
+.desc.hide{
+	-webkit-animation: pulseOut 1s linear;
+    -moz-animation: pulseOut 1s linear;
+    -o-animation: pulseOut 1s linear;
+    animation: pulseOut 1s linear;
+}
+
+@-webkit-keyframes pulseIn {
+    0% { height:0px;}
+    100% { height:auto; }
+}
+/*@keyframes pulseIn {
+    0% { -webkit-transform: scale(0); }
+    50% { -webkit-transform: scale(1.1); }
+    100% { -webkit-transform: scale(1); }
+}*/
+@-webkit-keyframes pulseOut {
+    0% { height:auto;}
+    100% { height:0px; }
+}
+@keyframes pulseOut {
+
+}
+
+
+/*
+.pulseOut {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+*/

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Brian Velasquez's DM61 Home Page</title>
+		<!-- normalize -->
+		<link rel="stylesheet" href="css/normalize.css">
+				<!-- Jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js">\x3C/script>')</script>
+		<!-- Angular -->
+		<script src="js/vendor/angular.min.js"></script>
+		<!-- Bootstrap-->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+
+	<body ng-app="ResumeApp">
+		<?php include("includes/header.php"); ?>
+		
+		<div class="divider1 divider">
+			<h1>Brian Velasquez</h1>
+			<h2 class="titleheadline">Front End Web Developer</h2>
+		</div>
+
+		<div class="content">
+			<h2>My Web Design Experience</h2>
+			<hr width="80%" >
+			<p class="firstInfo">I currently intern at a web design studio, and have taken several Web Design and Web Development classes both at cabrillo and online. These include classes in PHP, Javascript (and several associated frameworks), HTML5/CSS3 and in Java and Swift. This resume site was built using a combination of AngularJS, Jquery and Bootstrap along with some basic PHP and HTML5/CSS3.</p>
+		</div>
+		
+		<div class="divider divider2">
+		</div>
+
+		<div id="education" class="content fluid-container" ng-controller="ExperienceCtrl as exps">
+			<h2>On Campus Classes</h2>
+			<h3>Click for more info</h3>
+			<hr width="80%">
+			<div class="col-sm-4 educationcontainer">
+				<div ng-repeat="exp in exps.experiences1">
+					<exp-info info="exp"></exp-info>
+				</div>
+			</div>
+			<div class="col-sm-4 educationcontainer">
+				<div ng-repeat="exp in exps.experiences2">
+					<exp-info info="exp"></exp-info>
+				</div>
+			</div>
+			<div class="col-sm-4 educationcontainer">
+				<div ng-repeat="exp in exps.experiences3">
+					<exp-info info="exp"></exp-info>
+				</div>
+			</div>
+			<div class="col-md-12 clear" >
+			<p >Other relevant classes include: Introduction to C++ programming & Introduction to Java Programming using games and simulations</p>
+			</div>
+		</div>
+
+		<div class="divider divider3">
+		</div>
+
+		<div id="projects" class="content">
+			<h2>Projects</h2>
+			<hr width="80%" >
+			<div class="projects col-md-8">
+				<ul>
+					<li><a href="http://bluwaterdogz.github.io/DanWebsitePortfolio/" data-pic="imgs/dansite.jpg">Daniel V Portfolio</a></li>
+					<li><a href="https://github.com/bluwaterdogz/CraigslistTrawlerApp" data-pic="imgs/craigslisttrawler.jpg">Craigslist Trawler</a></li>
+					<li><a href="" data-pic="imgs/littlereaper.jpg">Little Reaper</a></li>
+					<li><a href="https://github.com/bluwaterdogz/PHPLoginDemo" data-pic="imgs/php-project.jpg">Movie rating App</a></li>
+					<li><a href="test.html" data-pic="imgs/banjopig.jpg">Banjo Pig</a></li>
+					<li><a href="https://github.com/bluwaterdogz/MeteorResolutions" data-pic="imgs/resolutions.png">Meteorjs Resolutions App</a></li>
+				</ul>
+			</div>
+
+			<div class="viewer col-md-4" >
+					<img src="imgs/dansite.jpg" class="transparent img-over" >
+					<img src="imgs/craigslisttrawler.jpg" class="transparent img-over" >
+					<img src="imgs/littlereaper.jpg" class="transparent img-over" >
+					<img src="imgs/php-project.jpg" class="transparent img-over" >
+					<img src="imgs/banjopig.jpg" class="transparent img-over" >
+					<a href="https://github.com/bluwaterdogz/MeteorResolutions"><img src="imgs/resolutions.png" class="transparent img-over" ></a>
+					<img src="" class=" img-over" >
+			</div>
+			<p style="clear:both;">Hover over links for pictures of each project or click to visit the github repo or project site.</p>
+		</div>
+		
+		<div class="divider divider4">
+		</div>
+
+		<div id="skills" class="content" ng-controller="SkillsCtrl as skills">
+			<h2>Skills</h2>
+			<div class="langlist" >
+				<table>
+					<thead>
+						<th class="skilltitle">
+							Language
+						</th>
+						<th  class="langlvl">
+							Level
+						</th>
+						<th class="skillclasses">
+							Classes
+						</th>
+						<th class="likebtn">
+							Likes (for fun)
+						</th>
+					</thead>
+					<hr width="80%" >
+
+				</table> 
+					<div ng-repeat="skill in skills.collection">
+						<div >
+							<skills-info info="skill"></skills-info>
+						</div>
+					</div>
+
+				<hr width="80%" >
+				<p>
+					Other Languages & Frameworks: JSON, SCSS, Meteor.js, AngularJS 
+					<br>
+					IDE experience: Sublime Text, EMACs, Android Studio, XCode, PyCharm, MAMP and GIT
+				</p>
+
+			</div>
+		</div>
+
+		<div class="divider divider5">
+		</div>
+
+		<div id="experience" class="content">
+			<h2>Professional Experience</h2>
+			<hr width="80%" >
+			<div style="margin:auto; width:90%">
+				<div class="workexperience col-sm-4">
+					<a href="http://www.sleeplessmedia.com/">
+						<div class="employers">
+							<iframe src="http://www.sleeplessmedia.com/">
+							</iframe>
+						</div>
+					</a>
+					<br>
+					<a href="http://www.sleeplessmedia.com/">						
+						Sleepless Media
+					</a>
+					<br>
+					<a href="http://www.sleeplessmedia.com/">
+						Junior Web Developer
+					</a>
+
+				</div>
+				<div class="workexperience col-sm-4">
+					<a href="http://www.oimba.com/">
+						<div class="employers">
+							<iframe src="http://www.oimba.com/" >
+							</iframe>
+						</div>
+					</a>
+					<br>
+					<a href="http://www.oimba.com/">						
+						Once In Motion
+					</a>
+					<br>
+					<a href="http://www.oimba.com/">
+						Graphic Design Intern
+					</a>
+				</div>
+				<div class="workexperience col-sm-4">
+					<a href="http://contractor-advertising.com/">
+						<div class="employers">
+							<iframe src="http://www.contractor-advertising.com">
+							</iframe>
+						</div>
+					</a>
+					<br>
+					<a href="http://www.contractor-advertising.com">						
+						Contract Advertising
+					</a>
+					<br>
+					<a href="http://www.contractor-advertising.com">
+						Web Design Intern
+					</a>
+				</div>
+			</div>
+			<div class="clear"><p>Previous unlisted work experience in Molecular Biology, refrences availiable upon request.</p></div>
+		</div>
+		
+		<div class="divider divider6">
+			<img src="imgs/me.jpg" alt="Hey this is a picture of me" id="profPic" style="margin-top:130px; transform:scale(1.5);">
+			<!-- <h3 style="color:white;">Hire me</h3> -->
+		</div>
+
+		<div class="content footercontainer">
+			<p class="disclaimer">All pictures have Creative Commons license or taken by the designer unless otherwise noted.</p>
+		</div>
+
+		<?php include("includes/footer.php"); ?>
+		
+		<!-- Modules -->
+		<script src="js/app.js"></script>
+
+		<!-- Controllers -->
+		<script src="js/controllers/experiencectrl.js"></script>
+		<script src="js/controllers/skillsCtrl.js"></script>
+		
+    	<!-- Directives -->
+    	<script src="js/directives/experienceInfo.js"></script>
+    	<script src="js/directives/skillsInfo.js"></script>
+
+    	<!-- Services -->
+    	<script src="js/services/classesService.js"></script>
+    	<script src="js/services/skillsService.js"></script>
+
+		<script src="js/homepage_effects.js"></script>
+		<script src="js/vendor/masonry.min.js"></script>
+	</body>
+</html>
