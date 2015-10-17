@@ -9,7 +9,8 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js">\x3C/script>')</script>
 		<!-- Angular -->
-		<script src="js/vendor/angular.min.js"></script>
+		<script src="bower_components/angular/angular.min.js"></script>
+		<script src="bower_components/angular-resource/angular-resource.min.js"></script>
 		<!-- Bootstrap-->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -20,7 +21,7 @@
 
 	<body ng-app="ResumeApp">
 		<?php include("includes/header.php"); ?>
-		
+
 		<div class="divider1 divider">
 			<h1>Brian Velasquez</h1>
 			<h2 class="titleheadline">Front End Web Developer</h2>
@@ -31,7 +32,7 @@
 			<hr width="80%" >
 			<p class="firstInfo">I currently intern at a web design studio, and have taken several Web Design and Web Development classes both at cabrillo and online. These include classes in PHP, Javascript (and several associated frameworks), HTML5/CSS3 and in Java and Swift. This resume site was built using a combination of AngularJS, Jquery and Bootstrap along with some basic PHP and HTML5/CSS3.</p>
 		</div>
-		
+
 		<div class="divider divider2">
 		</div>
 
@@ -87,7 +88,7 @@
 			</div>
 			<p style="clear:both;">Hover over links for pictures of each project or click to visit the github repo or project site.</p>
 		</div>
-		
+
 		<div class="divider divider4">
 		</div>
 
@@ -111,7 +112,7 @@
 					</thead>
 					<hr width="80%" >
 
-				</table> 
+				</table>
 					<div ng-repeat="skill in skills.collection">
 						<div >
 							<skills-info info="skill"></skills-info>
@@ -120,7 +121,7 @@
 
 				<hr width="80%" >
 				<p>
-					Other Languages & Frameworks: JSON, SCSS, Meteor.js, AngularJS 
+					Other Languages & Frameworks: JSON, SCSS, Meteor.js, AngularJS
 					<br>
 					IDE experience: Sublime Text, EMACs, Android Studio, XCode, PyCharm, MAMP and GIT
 				</p>
@@ -143,7 +144,7 @@
 						</div>
 					</a>
 					<br> -->
-					<a href="http://www.sleeplessmedia.com/">						
+					<a href="http://www.sleeplessmedia.com/">
 						Sleepless Media
 					</a>
 					<br>
@@ -160,7 +161,7 @@
 						</div>
 					</a>
 					<br> -->
-					<a href="http://www.oimba.com/">						
+					<a href="http://www.oimba.com/">
 						Once In Motion
 					</a>
 					<br>
@@ -176,7 +177,7 @@
 						</div>
 					</a>
 					<br> -->
-					<a href="http://www.contractor-advertising.com">						
+					<a href="http://www.contractor-advertising.com">
 						Contract Advertising
 					</a>
 					<br>
@@ -187,7 +188,7 @@
 			</div>
 			<div class="clear"><p>Previous unlisted work experience in Molecular Biology, refrences availiable upon request.</p></div>
 		</div>
-		
+
 		<div class="divider divider6">
 			<div class="profcont"><img src="imgs/me.jpg" alt="Hey this is a picture of me" id="profPic"></div>
 			<!-- <h3 style="color:white;">Hire me</h3> -->
@@ -196,7 +197,7 @@
 		<div class="content footercontainer">
 			<p class="disclaimer">All pictures have Creative Commons license or taken by the designer unless otherwise noted.</p>
 		</div>
-<!--  
+<!--
 		<?php include("includes/footer.php"); ?>
 -->
 		<!-- Modules -->
@@ -205,7 +206,7 @@
 		<!-- Controllers -->
 		<script src="js/controllers/experiencectrl.js"></script>
 		<script src="js/controllers/skillsCtrl.js"></script>
-		
+
     	<!-- Directives -->
     	<script src="js/directives/experienceInfo.js"></script>
     	<script src="js/directives/skillsInfo.js"></script>
