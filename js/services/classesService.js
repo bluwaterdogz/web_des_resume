@@ -1,4 +1,4 @@
-app.factory('ClassesService', ['$resource', function ($resource) {
+app.factory('ClassesService', [function () {
 
 	var classes = [
   {
