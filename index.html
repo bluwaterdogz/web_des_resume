@@ -32,26 +32,24 @@
 			<hr width="80%" >
 			<p class="firstInfo">I currently intern at a web design studio, and have taken several Web Design and Web Development classes both at cabrillo and online. These include classes in PHP, Javascript (and several associated frameworks), HTML5/CSS3 and in Java and Swift. This resume site was built using a combination of AngularJS, Jquery and Bootstrap along with some basic PHP and HTML5/CSS3.</p>
 		</div>
-
 		<div class="divider divider2">
 		</div>
-
 		<div id="education" class="content fluid-container" ng-controller="ExperienceCtrl as exps">
 			<h2>On Campus Classes</h2>
 			<h3>Click for more info</h3>
 			<hr width="80%">
 			<div class="col-sm-4 educationcontainer">
-				<div ng-repeat="exp in exps.experiences1">
+				<div ng-repeat="exp in exps.experiences  | expFilter:[1,2]">
 					<exp-info info="exp"></exp-info>
 				</div>
 			</div>
 			<div class="col-sm-4 educationcontainer">
-				<div ng-repeat="exp in exps.experiences2">
+				<div ng-repeat="exp in exps.experiences  | expFilter:[3,4]">
 					<exp-info info="exp"></exp-info>
 				</div>
 			</div>
 			<div class="col-sm-4 educationcontainer">
-				<div ng-repeat="exp in exps.experiences3">
+				<div ng-repeat="exp in exps.experiences  | expFilter:[5,6]">
 					<exp-info info="exp"></exp-info>
 				</div>
 			</div>
@@ -214,6 +212,9 @@
     	<!-- Services -->
     	<script src="js/services/classesService.js"></script>
     	<script src="js/services/skillsService.js"></script>
+
+			<!-- Filters -->
+			<script src="js/filters/experienceFilter.js"></script>
 
 		<script src="js/homepage_effects.js"></script>
 		<script src="js/vendor/masonry.min.js"></script>
