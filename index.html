@@ -11,16 +11,31 @@
 		<!-- Angular -->
 		<script src="bower_components/angular/angular.min.js"></script>
 		<script src="bower_components/angular-resource/angular-resource.min.js"></script>
-		<!-- Bootstrap-->
+		<!-- Bootstrap -->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 
 	<body ng-app="ResumeApp">
 		<?php include("includes/header.php"); ?>
+
+		<div class="navCont">
+			<a href="" class="nav-link"><i class="fa fa-bars"></i></a>
+			<nav>
+				<ul>
+					<li><a href="#statement" class="navbar-link">Goal</a></li><hr>
+					<li><a href="#education" class="navbar-link">Education</a></li><hr>
+					<li><a href="#projects" class="navbar-link">Projects</a></li><hr>
+					<li><a href="#skills" class="navbar-link">Skills</a></li><hr>
+					<li><a href="#experience" class="navbar-link">Experience</a></li><hr>
+				</ul>
+			</nav>
+		</div>
 
 		<div class="divider1 divider">
 			<h1>Brian Velasquez</h1>
@@ -29,7 +44,7 @@
 			</div>
 		</div>
 
-		<div class="content">
+		<div id="statement" class="content">
 			<h2>My Web Design Experience</h2>
 			<hr width="80%" >
 			<p class="firstInfo">I currently intern at a web design studio, and have taken several Web Design and Web Development classes both at cabrillo and online. These include classes in PHP, Javascript (and several associated frameworks), HTML5/CSS3 and in Java and Swift. This resume site was built using a combination of AngularJS, Jquery and Bootstrap along with some basic PHP and HTML5/CSS3.</p>
