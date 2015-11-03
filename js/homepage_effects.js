@@ -1,8 +1,8 @@
 $(document).ready(function($) {
-	$(' header, h1 , .titleheadline').hide();
+	$(' header, h1 , .titleheadlinebox').hide();
 
-	$('h1').fadeIn(500, function(){
-		$('.titleheadline').fadeIn(1000,function(){
+	$('h1').fadeIn(1000, function(){
+		$('.titleheadlinebox').fadeIn(2000,function(){
 			$('header').fadeIn(500);
 		});
 	});
@@ -11,7 +11,7 @@ $(document).ready(function($) {
 		var newImg = $(this).index();
 		$(".img-over").addClass("transparent");
 		$(".img-over").eq(newImg).removeClass("transparent");
-	
+
 	});
 
 	// Dancin Divs in work experience
@@ -30,7 +30,10 @@ $(document).ready(function($) {
 		},400);
 	});
 
-
+	$('a.backToTop').click(function (e) {
+  e.preventDefault();
+  $(document.body).animate({scrollTop: 0}, 2000, 'swing');
+});
 	// $('h2').each(function(){
 
 	// 	var $this = $(this),
@@ -67,4 +70,3 @@ function newPosition(){
 
 	return [x,y];
 }
-
