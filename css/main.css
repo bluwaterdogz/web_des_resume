@@ -11,15 +11,16 @@
 body
 {
     font-family: 'frente';
+
     min-width: 700px;
     margin: 0;
     padding: 0;
+
     text-align: left;
 }
 p
 {
     font-size: 30px;
-
     margin-top: 30px;
     padding-bottom: 30px;
 }
@@ -27,7 +28,6 @@ p
 h1
 {
     font-size: 200px;
-
     margin: 0;
     padding: 100px;
 }
@@ -41,124 +41,142 @@ h2
 h3
 {
     font-size: 50px;
-
     margin: auto;
     padding-top: 70px;
 }
-.nav-link{
-  position:fixed;
-  right:20px;
-  top:20px;
-  z-index: 10;
-  font-size: 30px;
-  color:black;
-  background-color:white;
-  width:auto;
-  height: auto;
-  padding:5px 10px 5px 10px;
-  border-radius: 7px;
+.nav-link
+{
+    position: fixed;
+    z-index: 10;
+    top: 20px;
+    right: 20px;
+    width: auto;
+    height: auto;
+    padding: 5px 10px 5px 10px;
+    color: black;
+    border-radius: 7px;
+    background-color: white;
 }
-.nav-link:hover + nav{
-  width:250px;
+.nav-link:hover + nav
+{
+    width: 250px;
 }
-nav:hover{
-  width:250px;
+nav:hover
+{
+    width: 250px;
 }
-nav{
-  height:100vh;
-  width:0px;
-  overflow: hidden;
-  background-color: rgb(255,249,246);
-  position:fixed;
-  right:0px;
-  top:0px;
-  z-index:1000;
-  font-family: helvetica;
-  font-size: 25px;
-  -webkit-transition: 700ms;
-  -o-transition: 700ms;
-  transition: 700ms;
-  box-shadow: 20px 20px 10px red;
+nav
+{
+    font-family: helvetica;
+    font-size: 25px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    width: 0;
+    height: 100vh;
+    -webkit-transition: 500ms;
+         -o-transition: 500ms;
+            transition: 500ms;
+    background-color: rgb(255,249,246);
+    box-shadow: 20px 20px 10px red;
 }
-nav ul{
-  margin:0;
-  position: relative;
-  z-index: 1000;
+nav ul
+{
+    position: relative;
+    z-index: 1000;
+    margin: 0;
 }
-nav li{
-
-  color:black;
-  -webkit-transition: 200ms;
-  -o-transition: 200ms;
-  transition: 200ms;
-  padding:25px 0px;
-  margin:0px;
-  border-left: thick solid #000000;
-
+nav li
+{
+    margin: 0;
+    padding: 25px 0;
+    -webkit-transition: 200ms;
+         -o-transition: 200ms;
+            transition: 200ms;
+    color: black;
+    border-left: thick solid #000;
 }
-nav li:hover{
-  /*padding-top: 25px;
+nav li:hover
+{
+    /*padding-top: 25px;
   padding-bottom: 25px;*/
-  position:relative;
+    position: relative;
 }
-nav li:hover a{
-  margin-left: 30px;
-  font-size: 30px;
+nav li:hover a
+{
+    font-size: 30px;
+
+    margin-left: 30px;
 }
-nav hr{
-  margin:0px 5px;
+nav hr
+{
+    margin: 0 5px;
 }
-nav a{
-  margin-left: 10px;
-  color:inherit;
-  -webkit-transition: 200ms;
-  -o-transition: 200ms;
-  transition: 200ms;
+nav a
+{
+    font-size: 30px;
+
+    margin-left: 10px;
+
+    -webkit-transition: 200ms;
+         -o-transition: 200ms;
+            transition: 200ms;
+
+    color: inherit;
 }
 
-nav a:hover, nav a:active{
-  color:inherit;
+nav a:hover,
+nav a:active
+{
+    color: inherit;
 }
-nav li:hover:after {
-  content: "";
-  position: absolute;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-  top: 40px;
-  left: 0;
-  margin-left: -9px;
-  width: 0px;
-  height 0px;
+nav li:hover:after
+{
+    position: absolute;
+    top: 40px;
+    left: 0;
 
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 15px solid #000;
+    width: 0;
+    height: 0;
+    margin-left: -9px;
 
+    content: '';
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+         -o-transform: rotate(90deg);
+            transform: rotate(90deg);
 
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #000;
+    border-left: 15px solid transparent;
 }
 header
 {
     position: fixed;
+
     width: 100%;
     height: 40px;
+
     background-color: rgba(254,248,245,.9);
 }
 .titleheadline
 {
-    margin-top:10px;
+    margin-top: 10px;
     padding-top: 0;
 }
 .titleheadlinebox
 {
     display: block;
-    background-color: white;
-    border-radius: 100px;
-    border:black 1px solid;
-    width:700px;
-    height:100px;
+
+    width: 700px;
+    height: 100px;
     margin: 200px auto;
+
+    border: black 1px solid;
+    border-radius: 100px;
+    background-color: white;
 }
 ul
 {
@@ -465,6 +483,9 @@ li
 
 .content
 {
+    position: relative;
+    z-index: 0;
+
     clear: all;
 
     height: auto;
@@ -472,8 +493,7 @@ li
     padding: 0;
 
     text-align: center;
-    position:relative;
-  z-index: 0;
+
     background-color: rgb(255,249,246);;
 }
 .divider
@@ -549,7 +569,6 @@ li
 
 @media (max-width:750px)
 {
-
     .divider
     {
         background-size: 100vw 100vh;
