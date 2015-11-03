@@ -34,7 +34,6 @@ h1
 h2
 {
     font-size: 70px;
-
     margin: auto;
     padding-top: 55px;
 }
@@ -45,6 +44,99 @@ h3
 
     margin: auto;
     padding-top: 70px;
+}
+.nav-link{
+  position:fixed;
+  right:20px;
+  top:20px;
+  z-index: 10;
+  font-size: 30px;
+  color:black;
+  background-color:white;
+  width:auto;
+  height: auto;
+  padding:5px 10px 5px 10px;
+  border-radius: 7px;
+}
+.nav-link:hover + nav{
+  width:250px;
+}
+nav:hover{
+  width:250px;
+}
+nav{
+  height:100vh;
+  width:0px;
+  overflow: hidden;
+  background-color: rgb(255,249,246);
+  position:fixed;
+  right:0px;
+  top:0px;
+  z-index:1000;
+  font-family: helvetica;
+  font-size: 25px;
+  -webkit-transition: 700ms;
+  -o-transition: 700ms;
+  transition: 700ms;
+  box-shadow: 20px 20px 10px red;
+}
+nav ul{
+  margin:0;
+  position: relative;
+  z-index: 1000;
+}
+nav li{
+
+  color:black;
+  -webkit-transition: 200ms;
+  -o-transition: 200ms;
+  transition: 200ms;
+  padding:25px 0px;
+  margin:0px;
+  border-left: thick solid #000000;
+
+}
+nav li:hover{
+  /*padding-top: 25px;
+  padding-bottom: 25px;*/
+  position:relative;
+}
+nav li:hover a{
+  margin-left: 30px;
+  font-size: 30px;
+}
+nav hr{
+  margin:0px 5px;
+}
+nav a{
+  margin-left: 10px;
+  color:inherit;
+  -webkit-transition: 200ms;
+  -o-transition: 200ms;
+  transition: 200ms;
+}
+
+nav a:hover, nav a:active{
+  color:inherit;
+}
+nav li:hover:after {
+  content: "";
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 40px;
+  left: 0;
+  margin-left: -9px;
+  width: 0px;
+  height 0px;
+
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #000;
+
+
 }
 header
 {
@@ -380,8 +472,9 @@ li
     padding: 0;
 
     text-align: center;
-
-    background: white;
+    position:relative;
+  z-index: 0;
+    background-color: rgb(255,249,246);;
 }
 .divider
 {
