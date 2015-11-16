@@ -16,13 +16,16 @@
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<!-- Font Awesome -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!-- CSS Effects -->
+		<link rel="stylesheet" href="css/hover.css">
+		<link rel="stylesheet" href="css/animate.css">
 
 		<link rel='shortcut icon' href='imgs/boozeico.png' type='image/x-icon'/ >
 		<link rel="stylesheet" href="css/main.css">
+
 	</head>
 
 	<body ng-app="ResumeApp">
-		<?php include("includes/header.php"); ?>
 
 		<div class="navCont">
 			<a href="" class="nav-link"><i class="fa fa-bars"></i></a>
@@ -30,11 +33,11 @@
 				<img src="imgs/boozeico.png" alt="">
 				<ul>
 
-					<li><a href="#statement" class="navbar-link">Goal</a></li>
-					<li><a href="#education" class="navbar-link">Education</a></li>
-					<li><a href="#projects" class="navbar-link">Projects</a></li>
-					<li><a href="#skills" class="navbar-link">Skills</a></li>
-					<li><a href="#experience" class="navbar-link">Experience</a></li>
+					<li class="hvr-sweep-to-right"><a href="#statement" class="navbar-link">Goal</a></li>
+					<li class = "hvr-sweep-to-right"><a href="#education" class="navbar-link">Education</a></li>
+					<li class = "hvr-sweep-to-right"><a href="#projects" class="navbar-link">Projects</a></li>
+					<li class = "hvr-sweep-to-right"><a href="#skills" class="navbar-link">Skills</a></li>
+					<li class = "hvr-sweep-to-right"><a href="#experience" class="navbar-link">Experience</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -49,7 +52,7 @@
 		<div id="statement" class="content">
 			<h2>My Web Design Experience</h2>
 			<hr width="80%" >
-			<p class="firstInfo">I currently intern at a web design studio, and have taken several Web Design and Web Development classes both at cabrillo and online. These include classes in PHP, Javascript (and several associated frameworks), HTML5/CSS3 and in Java and Swift. This resume site was built using a combination of AngularJS, Jquery and Bootstrap along with some basic PHP and HTML5/CSS3.</p>
+			<p class="firstInfo">My name is Brian Velasquez and I am a junior frount end developer. I currently intern at a web design studio, and have taken several Web Design and Web Development classes both at cabrillo and online. These include classes in PHP, Web2py, Javascript (including several associated libraries and frameworks), HTML5/CSS3 and Java. This resume site was built using a combination of AngularJS, Jquery and Bootstrap along with HTML5/CSS3.</p>
 		</div>
 		<div class="divider divider2">
 		</div>
@@ -213,7 +216,7 @@
 
 		<div class="content footercontainer">
 			<p class="disclaimer">All pictures have Creative Commons license or taken by the designer unless otherwise noted.</p>
-			<a href="" class="backToTop btn btn-primary">Back to Top</a>
+			<a href="" class="backToTop btn btn-primary hvr-ripple-out">Back to Top</a>
 		</div>
 <!--
 		<?php include("includes/footer.php"); ?>
@@ -236,7 +239,13 @@
 			<!-- Filters -->
 			<script src="js/filters/experienceFilter.js"></script>
 
+			<!-- WOW -->
+			<script src="js/vendor/wow.min.js"></script>
+			<script>
+              new WOW().init();
+              </script>
+
 		<script src="js/homepage_effects.js"></script>
-		<script src="js/vendor/masonry.min.js"></script>
+		<!-- not implemented yet <script src="js/vendor/masonry.min.js"></script> -->
 	</body>
 </html>
