@@ -472,7 +472,7 @@ li
 {
     position: relative;
     z-index: 0;
-  
+
     clear: all;
 
     height: auto;
@@ -506,11 +506,11 @@ li
 }
 .divider2
 {
-    background-image: url('../imgs/landscape-nature-clouds-cloudy.jpg');
+    background-image: url('../imgs/forest-2.jpg');
 }
 .divider3
 {
-    background-image: url('../imgs/clouds-cloudy-forest-mountain.jpg');
+    background-image: url('../imgs/forest-3.jpg');
 }
 .divider4
 {

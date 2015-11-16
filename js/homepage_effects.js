@@ -34,30 +34,6 @@ $(document).ready(function($) {
   e.preventDefault();
   $(document.body).animate({scrollTop: 0}, 2000, 'swing');
 });
-	// $('h2').each(function(){
-
-	// 	var $this = $(this),
-	// 		$window = $(window),
-	// 		objPosTop = $this.offset().top;
-	// 		objPosBottom = $this.offset().bottom;
-
-
-	// 	$window.scroll(function() {
-
-	// 		var windowPosY = $window.scrollTop();
-
-	// 		if(
-	// 			windowPosY + $window.height()/2 >= objPosTop
-
-	// 			){
-
-	// 			$this.fadeIn(1000, function(){
-	// 				$this.removeClass("scrollfade");
-	// 			});
-	// 		}
-	// 	});
-	// });
-
 
 });
 
