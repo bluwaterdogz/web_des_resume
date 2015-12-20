@@ -1,4 +1,4 @@
-$(document).ready(function($) {
+ $(document).ready(function($) {
 	$(' header, h1 , .titleheadlinebox').hide();
 
 	$('h1').fadeIn(1000, function(){

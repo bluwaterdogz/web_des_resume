@@ -145,6 +145,12 @@ nav li:hover:after
 nav img{
   margin-left:10%;
 }
+.navbar-link i{
+  width:16%;
+  margin-left: 2%;
+  text-align: center;
+
+}
 header
 {
     position: fixed;

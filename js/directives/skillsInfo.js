@@ -11,7 +11,7 @@ app.directive('skillsInfo', function() {
 
       scope.addLike = function(){
         scope.likes++;
-    }
+      };
 
     }
 

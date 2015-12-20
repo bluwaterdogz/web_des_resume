@@ -1,5 +1,4 @@
-
-<div class = "expBox wow flipInX" >
+<div class="expBox wow flipInX">
 	<span style="text-align:center;">
 		<h3>
 			<a ng-click="anim(); showDeets=!showDeets;">{{info.title}}</a>
@@ -7,15 +6,12 @@
 		<p>
 			<i>{{info.date}}</i>
 		</p>
-		<p class="desc"
-			ng-class="desc"
-			ng-show="showDeets"
-			ng-animate="{show: 'animate-enter', hide: 'animate-leave'}">
+		<p class="desc" ng-class="desc" ng-show="showDeets" ng-animate="{show: 'animate-enter', hide: 'animate-leave'}">
 			{{info.description}}
 		</p>
 	</span>
 	<span class="hearticons">
-	{{info.hearts}}
+		{{info.hearts}}
 	</span>
 	<div class="clear"></div>
 </div>
