@@ -1,6 +1,6 @@
 app.directive('navBar', function(){
   return {
-    restrict:"E",
+    restrict   : "E",
     templateUrl: 'js/directives/navBar.html'
   };
 });

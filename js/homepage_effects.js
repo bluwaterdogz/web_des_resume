@@ -1,21 +1,20 @@
  $(document).ready(function($) {
-	$(' header, h1 , .titleheadlinebox').hide();
+	$('#my_name, .titleheadline ').hide();
 
-	$('h1').fadeIn(1000, function(){
-		$('.titleheadlinebox').fadeIn(2000,function(){
-			$('header').fadeIn(500);
-		});
+	$('#my_name').fadeIn(1000, function(){
+		$('.titleheadline').fadeIn(2000);
 	});
 
-	$(".projects li").mouseenter(function() {
+	$(".project-title-cont li").mouseenter(function() {
 		var newImg = $(this).index();
+    console.log(newImg);
 		$(".img-over").addClass("transparent");
 		$(".img-over").eq(newImg).removeClass("transparent");
 
 	});
 
-	// Dancin Divs in work experience
-	$('.workexperience').each(function(){
+	// Dancin Divs
+	$('.sway').each(function(){
 
 		var $this = $(this);
 		setInterval(function(){
@@ -43,6 +42,5 @@ function newPosition(){
 		halfRange = Math.floor(RANGE/2),
 		x = Math.floor(Math.random()*RANGE-halfRange),
 		y = Math.floor(Math.random()*RANGE-halfRange);
-
 	return [x,y];
 }

@@ -1,0 +1,21 @@
+{
+  "name": "web_des_resume",
+  "homepage": "https://github.com/bluwaterdogz/web_des_resume",
+  "authors": [
+    "Bluwaterdogz <bveedy@gmail.com>"
+  ],
+  "description": "Brian Velasquez's Resume",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-resource": "~1.4.7"
+  }
+}

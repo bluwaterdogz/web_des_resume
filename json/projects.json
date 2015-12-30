@@ -1,0 +1,38 @@
+[
+  {
+  "title":"James Sauter Portfolio",
+  "img":"imgs/james2.jpg",
+  "url":"http://bluwaterdogz.github.io/JamesStatic/",
+  },
+  {
+  "title":"Boards Web2py App",
+  "img":"imgs/boards.jpg",
+  "url":"https://bluwaterdogz.pythonanywhere.com/Boards/default/index",
+  },
+  {
+  "title":"Daniel V Portfolio",
+  "img":"imgs/dansite.jpg",
+  "url":"http://bluwaterdogz.github.io/DanWebsitePortfolio/",
+  },
+  {
+  "title":"Meteorjs Resolutions App",
+  "img":"imgs/resolutions.png",
+  "url":"http://resolutionsbv.meteor.com/",
+  "githubUrl":"https://github.com/bluwaterdogz/MeteorResolutions"
+  },
+  {
+  "title":"Angular Todo App",
+  "url":"https://github.com/bluwaterdogz/angularTodo",
+  },
+  {
+  "title":"Craigslist Trawler",
+  "img":"imgs/craigslisttrawler.jpg",
+  "url":"https://github.com/bluwaterdogz/CraigslistTrawlerApp",
+  },
+  {
+  "title":"Movie rating App",
+  "img":"imgs/php-project.jpg",
+  "url":"https://github.com/bluwaterdogz/PHPLoginDemo",
+  "githubUrl":"https://github.com/bluwaterdogz/MeteorResolutions"
+  }
+]
