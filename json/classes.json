@@ -2,44 +2,64 @@
   {
     "id":1,
     "title":"Web Applications",
+    "location":"UCSC",
     "date":"Fall 2015",
     "description":"Web Application development using Web2Py and angularJS.",
-    "skill":"❤❤❤"
   },
   {
     "id":2,
     "title":"WebPublishing 1 & 2",
+    "location":"Cabrillo",
     "date":"Spring 2015",
     "description":"First course in web publishing series based on HTML and CSS",
-    "skill":"❤❤❤"
   },
   {
     "id":3,
     "title":"Javascript",
+    "location":"Cabrillo",
     "date":"Winter 2015",
     "description":"Introduction to browser based Javascript.",
-    "skill":"❤❤❤"
   },
   {
     "id":4,
     "title":"Mobile Programming: IOS and Android",
+    "location":"Cabrillo",
     "date":"Spring 2015",
-    "skill":"❤",
     "description":"Mobile app development using Android studio and Xcode with either Java or Swift Programming languages."
   },
   {
     "id":5,
     "title":"Programming Database Driven Websites with PHP",
+    "location":"Cabrillo",
     "date":"Spring 2015",
     "description":"Introduction to PHP server-side programming language as an OOP and the implementation of SQL into websites programmed with it.",
-    "skill":"❤❤❤"
   },
   {
     "id":6,
-    "title":"Java programming",
+    "title":"Java programming 1, 2",
+    "location":"Cabrillo",
     "date":"Fall 2015",
-    "description":"Introduction to OOP Java using the Greenfoot programming library, followed by an intermediate Java class.",
-    "skill":"❤❤❤"
-
+    "description":"Introduction to OOP Java, followed by an intermediate Java class covering common data structures and java concepts.",
+  },
+  {
+    "id":7,
+    "title":"Android Programming",
+    "location":"UCSC",
+    "date":"Winter 2016",
+    "description":"Intermediate project based class in Java Android Development.",
+  },
+  {
+    "id":8,
+    "title":"Relational Database Management",
+    "location":"Cabrillo",
+    "date":"Spring 2016",
+    "description":"Introduction to managing and maintaining relational SQL databases",
+  }
+  {
+    "id":9,
+    "title":"Introduction to Algorithms and Data Structures",
+    "location":"Cabrillo",
+    "date":"Spring 2016",
+    "description":"Introduction to and analysis of Common Algorithms and Data srtuctures",
   }
 ]

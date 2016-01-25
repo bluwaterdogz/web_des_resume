@@ -1,0 +1,692 @@
+/*!
+Author:Brian Velasquez
+Title: Main css page for Brian Velasquez's resume
+*/
+
+@font-face
+{
+    font-family: 'frente';
+    src: url('../../fonts/frente-h1/FrenteH1-Regular.otf');
+}
+.clear
+{
+    clear: both;
+}
+body
+{
+    font-family: 'frente';
+    min-width: 400px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+p
+{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+}
+
+h1
+{
+    font-size: 170px;
+    margin: 0;
+    padding: 40px;
+    padding-top: 20px;
+}
+h2
+{
+    font-size: 60px;
+    margin: auto;
+    padding-top: 40px;
+}
+
+h3
+{
+    font-size: 50px;
+    margin: auto;
+    padding: 40px;
+}
+.nav-link
+{
+    position: fixed;
+    z-index: 10;
+    top: 20px;
+    right: 20px;
+    width: auto;
+    height: auto;
+    padding: 5px 10px 5px 10px;
+    color: black;
+    font-size: 30px;
+    border-radius: 7px;
+    background-color: white;
+}
+.nav-link:hover + nav
+{
+    width: 250px;
+}
+nav:hover
+{
+    width: 250px;
+}
+nav
+{
+    -webkit-box-shadow: -3px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -3px 2px 5px 0px rgba(0,0,0,0.75);
+    font-family: helvetica;
+    font-size: 25px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    width: 0;
+    height: 100vh;
+    -webkit-transition: 500ms;
+         -o-transition: 500ms;
+            transition: 500ms;
+    background-color: white;
+
+}
+nav ul
+{
+    position: relative;
+    z-index: 1000;
+    margin: 0;
+}
+nav li
+{
+    width:100%;
+    margin: 0;
+    padding: 25px 0;
+
+    color: black;
+    border-left: thick solid #000;
+}
+nav li:hover
+{
+    position: relative;
+}
+nav li:hover a
+{
+    font-size: 30px;
+    margin-left: 30px;
+}
+nav hr
+{
+    margin: 0 5px;
+}
+nav a
+{
+    font-size: 30px;
+    margin-left: 10px;
+    -webkit-transition: 300ms;
+         -o-transition: 300ms;
+            transition: 300ms;
+    color: inherit;
+}
+nav a:hover,
+nav a:active
+{
+    color: inherit;
+}
+nav li:hover:after
+{
+    position: absolute;
+    top: 40px;
+    left: 0;
+
+    width: 0;
+    height: 0;
+    margin-left: -9px;
+
+    content: '';
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+         -o-transform: rotate(90deg);
+            transform: rotate(90deg);
+
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #000;
+    border-left: 15px solid transparent;
+}
+nav img{
+  margin-left:10%;
+}
+.navbar-link i{
+  width:16%;
+  margin-left: 2%;
+  text-align: center;
+
+}
+header
+{
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(254,248,245,.9);
+}
+.divider1
+{
+  padding: 5% 10%;
+}
+#title-cont
+{
+  background:rgba(0,0,0,0);
+  padding:0%;
+}
+#title-box h3
+{
+  color:white;
+}
+.titleheadline
+{
+  padding-top:20vw;
+}
+ul
+{
+    padding: 0;
+    list-style: none;
+}
+header ul li,
+footer ul li
+{
+    display: inline;
+}
+header ul
+{
+    margin-top: 10px;
+}
+header li a
+{
+    font-size: 20px;
+
+    text-decoration: none;
+
+    color: black;
+}
+
+/* Classes/skills */
+.langlist
+{
+    font-size: 25px;
+
+    text-align: center;
+}
+.langlist table
+{
+    margin: 20px auto;
+}
+.langlist td,
+th
+{
+    margin: auto;
+    padding: 10px;
+
+    -webkit-transition: .5s;
+         -o-transition: .5s;
+            transition: .5s;
+    text-align: center;
+}
+table
+{
+    margin: 0;
+}
+.langlist td:hover
+{
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+         -o-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+a[ng-click]
+{
+    cursor: pointer;
+}
+a:hover
+{
+    text-decoration: none;
+}
+th
+{
+    font-size: 40px;
+}
+
+
+#skills img
+{
+    width: 180px;
+
+    -webkit-transition: 500ms;
+         -o-transition: 500ms;
+            transition: 500ms;
+
+    border: 1px solid black;
+    border-radius: 100px;
+}
+
+#skills
+{
+    text-align: center;
+}
+
+.sideinfo
+{
+    position: absolute;
+    top: -100px;
+    left: 10%;
+
+    width: 250px;
+    padding: 10px;
+
+    -webkit-transition: 500ms;
+         -o-transition: 500ms;
+            transition: 500ms;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    background: rgba(250,250,250,.8);
+}
+.sideinfoR
+{
+    /*left:-190%;*/
+}
+.skill
+{
+    position: relative;
+    z-index: 1;
+
+    display: inline-block;
+
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.skill img:hover,
+.skill img:hover + *
+{
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+         -o-transform: scale(1.5);
+            transform: scale(1.5);
+
+    opacity: 1;
+}
+
+.skilltitle
+{
+    width: 20vw;
+}
+.langlvl
+{
+    width: 10vw;
+}
+.skillclasses
+{
+    width: 50vw;
+}
+.likebtn
+{
+    width: 20vw;
+}
+.class-title{
+  font-size:40px;
+  padding:10px;
+}
+
+/* Projects */
+#projects{
+    overflow: auto;
+    width: 100%;
+    text-align: center;
+}
+#projects ul
+{
+    list-style: none;
+
+    text-align: left;
+}
+#projects a
+{
+    font-size: 40px;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    color: #202020;
+}
+.disclaimer
+{
+  margin:40px auto;
+}
+.img-over
+{
+    position: absolute;
+    right: 10%;
+    width: 360px;
+    height: 360px;
+    margin-top: 20px;
+
+    -webkit-transition: 1s;
+         -o-transition: 1s;
+            transition: 1s;
+
+    border: 2px solid #202020;
+    border-radius: 200px;
+    box-shadow: 0 0 20px 5px #000;
+}
+.project-title-cont ul{
+  margin-top: 20px;
+}
+.transparent
+{
+    opacity: 0;
+}
+
+/* Education */
+
+#education
+{
+    overflow: auto;
+}
+.expBox
+{
+    position: relative;
+
+    overflow: auto;
+
+    height: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+
+    -webkit-transition: .5s;
+         -o-transition: .5s;
+            transition: .5s;
+    text-decoration: none;
+
+    border: 3px black solid;
+}
+.expBox:hover
+{
+    border: 3px solid gold;
+}
+li
+{
+    -webkit-transition: 500ms;
+         -o-transition: 500ms;
+            transition: 500ms;
+}
+#projects li:hover
+{
+    transform: scale(1.2);
+}
+.projects
+{
+    width: 40%;
+    margin: 20px;
+}
+.viewer
+{
+    position: relative;
+    top: 50px;
+
+    float: left;
+
+    width: 50%;
+    height: 40%;
+}
+.sway{
+  position:relative;
+}
+/* Experience */
+.workexperience a
+{
+    font-size: 40px;
+}
+.employers
+{
+    /*height:300px;*/
+    overflow: hidden;
+    /*border-radius:100%;*/
+
+    width: 300px;
+}
+
+/* footer */
+.footercontainer .disclaimer
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 30px;
+}
+.firstInfo
+{
+    margin: 30px 30px 0 30px ;
+}
+.profcont
+{
+    overflow: hidden;
+
+    width: 300px;
+    height: 300px;
+    margin: auto;
+
+    -webkit-transition: 500ms;
+         -o-transition: 500ms;
+            transition: 500ms;
+
+    border: 4px solid white;
+    border-radius: 100%;
+}
+.profcont:hover
+{
+    transform: scale(1.2);
+}
+#profPic
+{
+    width: auto;
+    height: 300px;
+}
+.content
+{
+  -webkit-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.75);
+    position: relative;
+    z-index: 0;
+
+    clear: all;
+
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+
+    background-color: white;
+}
+.divider
+{
+    height: 500px;
+
+    text-align: center;
+
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+}
+.divider1
+{
+    position: relative;
+    z-index: -1000;
+    /*	background-size: 100% 100vh;
+*/	height: 100vh;
+
+    text-align: center;
+
+    background-image: url('../build/imgsopt/nature-forest-trees-fog.jpeg');
+    background-position: 0 0;
+}
+.divider2
+{
+    background-image: url('../build/imgsopt/forest-2.jpg');
+}
+.divider3
+{
+    background-image: url('../build/imgsopt/forest-3.jpg');
+}
+.divider4
+{
+    background-image: url('../build/imgsopt/forest-trees-fog-foggy.jpg');
+}
+.divider5
+{
+    background-image: url('../build/imgsopt/forest-5.jpg');
+}
+
+.divider6
+{
+    height: 80vh;
+    padding-top: 15vh;
+
+    background-image: url('../build/imgsopt/forest-6.jpg');
+}
+.footercontainer
+{
+    height: 20vh;
+}
+.btn
+{
+    font-size: 20px;
+
+    width: 100px;
+
+    -webkit-transition: 500ms;
+         -o-transition: 500ms;
+            transition: 500ms;
+
+    color: black;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0);
+}
+.btn:hover
+{
+    font-weight: bold;
+
+    color: blue;
+    background-color: rgba(200,250,250,.6);
+}
+
+@media only screen and (max-device-width:765px)
+{
+    .nav-link
+    {
+      position:fixed;
+      top:20px;
+      left:20px;
+      width:45px;
+      /*display:none;*/
+    }
+    .nav-link:hover + nav
+    {
+      height:45vh;
+      width:100vw;
+    }
+    nav:hover
+    {
+      height:45vh;
+    }
+    nav
+    {
+      position:fixed;
+      height:0px;
+      width:100vw;
+      text-align: center;
+      top:55vh;
+      bottom:0px;
+      left:0;
+    }
+    nav img
+    {
+      display:none;
+    }
+    nav a{
+
+      font-size: 55px;
+    }
+    .navbar-link i
+    {
+      width:8%;
+      margin-left: 0;
+    }
+    nav ul{
+      margin-top: 30px;
+    }
+    nav li{
+      padding:10px;
+      border-left: none;
+    }
+    .divider
+    {
+        background-size: 100vw 100vh;
+    }
+    .divider1
+    {
+        height: 55vh;
+        text-align: center;
+        background-size: 100vh 100vh;
+    }
+    .project-pic-cont{
+        display:none;
+        margin:auto;
+    }
+    .project-title-cont li{
+      text-align: center;
+    }
+    .langlist{
+      font-size:30px;
+    }
+    h1
+    {
+        font-size: 15vw;
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+    h2
+    {
+        font-size: 8vw;
+    }
+    p{
+        font-size: 3vw;
+    }
+    #title-box h3.titleheadline
+    {
+        font-size: 5vw;
+        /*padding-top: 0px;*/
+        color:black;
+    }
+}
+@media (max-width: 80vh)
+{
+    .divider1
+    {
+        background-size: 100vh 100vh;
+    }
+    .divider
+    {
+        background-size: auto 100vh;
+    }
+}
+@media (min-width:1900px)
+{
+    .divider1
+    {
+        background-size: 100vh 100vh;
+    }
+    .divider
+    {
+        background-size: 100% 100vh;
+    }
+}
