@@ -16,7 +16,6 @@ app.filter('expFilter', function() {
           console.log("No Id for "+input.title);
         }
       });
-
     }else{console.log("No data");}
 
     return output;
