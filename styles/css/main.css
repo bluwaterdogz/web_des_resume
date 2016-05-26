@@ -6,7 +6,7 @@ Title: Main css page for Brian Velasquez's resume
 @font-face
 {
     font-family: 'frente';
-    src: url('/build/assets/fonts/frente-h1/FrenteH1-Regular.otf');
+    src: url('web_des_resume/build/assets/fonts/frente-h1/FrenteH1-Regular.otf');
 }
 .clear
 {

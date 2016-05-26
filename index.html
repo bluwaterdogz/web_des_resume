@@ -9,7 +9,7 @@
 	<!-- Jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script>
-		window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js">\x3C/script>')
+		window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"></script>')
 	</script>
 	<!-- Angular -->
 	<script src="bower_components/angular/angular.min.js"></script>
@@ -17,6 +17,10 @@
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script>
+	var bootstrap_enabled = (typeof $().modal == 'function');
+	bootstrap_enabled || document.write('<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="bower_components/bootstrap/dist/css/bootstrap.min.css"></script>')
+	</script>
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<!-- CSS Effects -->
