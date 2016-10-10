@@ -1,0 +1,73 @@
+body
+{
+    font-family: 'frente';
+    min-width: 400px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+p
+{
+    font-size: 20px;
+    padding: 30px 0;
+    margin:0 auto;
+    max-width:800px;
+    font-family: 'Open Sans';
+    font-weight: 100;
+}
+
+h1
+{
+    font-size: 170px;
+    margin: 0;
+    padding: 40px;
+    padding-top: 20px;
+}
+h2
+{
+    font-size: 60px;
+    margin: auto;
+    padding-top: 40px;
+}
+
+h3
+{
+    font-size: 50px;
+    margin: auto;
+    padding: 40px;
+}
+.sec-container{
+  width:90%;
+  max-width:1000;
+  margin:auto;
+}
+.overlay{
+  width:100%;
+  height: inherit;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.flexbox-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-white{
+  background-color: rgba(0,0,0,0);
+  border:2px solid white;
+  padding:8px 20px;
+  border-radius: 8px;
+
+  font-size: 30px;
+  color:white;
+  @include trans(500ms);
+  &:hover{
+    background-color:white;
+    color:rgba(0,0,0,0);
+  }
+}

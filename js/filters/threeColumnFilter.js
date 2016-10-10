@@ -13,10 +13,12 @@ app.filter('expFilter', function() {
             output.push(input);
           }
         }else{
-          console.log("No Id for "+input.title);
+          //console.log("No Id for "+input.title);
         }
       });
-    }else{console.log("No data");}
+    }else{
+      //console.log("No data");
+    }
 
     return output;
 

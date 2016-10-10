@@ -31,8 +31,8 @@ gulp.task('watch', function() {
   gulp.watch('styles/**/*.scss', ['styles']);
   gulp.watch('styles/**/*.css', ['styles']);
   gulp.watch('js/**/*.js', ['scripts']);
-  gulp.watch('imgs/*', ['images']);
-  gulp.watch('build/styles/**/*.css').on('change', browsersync.reload);
+  // gulp.watch('imgs/*', ['images']);
+  // gulp.watch('build/styles/**/*.css').on('change', browsersync.reload);
   gulp.watch('*.html').on('change', browsersync.reload);
   gulp.watch('js/**/*.html').on('change', browsersync.reload);
   gulp.watch('js/**/*.js').on('change', browsersync.reload);

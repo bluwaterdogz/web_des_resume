@@ -1,0 +1,114 @@
+.nav-link
+{
+    position: fixed;
+    z-index: 10;
+    top: 20px;
+    right: 20px;
+    width: auto;
+    height: auto;
+    padding: 5px 10px 5px 10px;
+    color: black;
+    font-size: 30px;
+    border-radius: 7px;
+    background-color: white;
+    i{
+      width:16%;
+      margin-left: 2%;
+      text-align: center;
+
+    }
+ &:hover + nav{
+    width: 250px;
+  }
+}
+
+nav{
+  -webkit-box-shadow: -3px 2px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -3px 2px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: -3px 2px 5px 0px rgba(0,0,0,0.75);
+  font-family: helvetica;
+  font-size: 25px;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  width: 0;
+  height: 100vh;
+  -webkit-transition: 500ms;
+       -o-transition: 500ms;
+          transition: 500ms;
+  background-color: white;
+  &:hover
+  {
+      width: 250px;
+  }
+
+  ul
+  {
+      position: relative;
+      z-index: 1000;
+      margin: 0;
+  }
+  li
+  {
+      width:100%;
+      margin: 0;
+      padding: 25px 0;
+
+      color: black;
+      border-left: thick solid #000;
+  }
+  li:hover
+  {
+      position: relative;
+      a
+      {
+          font-size: 30px;
+          margin-left: 30px;
+      }
+    }
+    li:hover:after
+    {
+        position: absolute;
+        top: 40px;
+        left: 0;
+
+        width: 0;
+        height: 0;
+        margin-left: -9px;
+
+        content: '';
+        -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+             -o-transform: rotate(90deg);
+                transform: rotate(90deg);
+
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid #000;
+        border-left: 15px solid transparent;
+    }
+  hr
+  {
+      margin: 0 5px;
+  }
+  a
+  {
+      font-size: 30px;
+      margin-left: 10px;
+      -webkit-transition: 300ms;
+           -o-transition: 300ms;
+              transition: 300ms;
+      color: inherit;
+  }
+  a:hover,
+  a:active
+  {
+      color: inherit;
+  }
+
+  img{
+    margin-left:10%;
+  }
+
+}
