@@ -1,20 +1,14 @@
 app.directive('expInfo', [function() {
   return {
-    
     restrict: 'E',
-   
     scope: {
       info: '='
     },
-    
     templateUrl: 'js/directives/experienceInfo.html',
 
 	link: function(scope){
-
 		scope.unhidden = true;
-
 		scope.anim = function(){
-
 			if(scope.hidden){
 				$('.expbox').css({
 					height: 'auto',
@@ -30,8 +24,7 @@ app.directive('expInfo', [function() {
 				scope.hidden = true;
 
 			}
-
-		}
+		};
 	}
-  }
+};
 }]);

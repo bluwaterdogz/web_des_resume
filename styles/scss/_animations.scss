@@ -1,0 +1,239 @@
+[ui-view] {
+  transition: transform 1s ease;
+  transform: translate3d(0, 0, 0);
+  &.ng-enter {
+    transform: translate3d(0, 100%, 0);  // Move to the right (up to 100% of width)
+  }
+  &.ng-enter-active {
+    transform: translate3d(0, 0, 0);
+  }
+  &.ng-leave {
+    transform: translate3d(0, 0, 0);
+  }
+  &.ng-leave-active {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+#divider1{
+    h1 {
+      margin-top: 25px;
+      font-size: 21px;
+      text-align: center;
+      opacity: 0;
+      position: relative;
+
+      -webkit-animation: fadeinname 3s forwards; /* Safari, Chrome and Opera > 12.1 */
+         -moz-animation: fadeinname 3s forwards; /* Firefox < 16 */
+          -ms-animation: fadeinname 3s forwards; /* Internet Explorer */
+           -o-animation: fadeinname 3s forwards; /* Opera < 12.1 */
+              animation: fadeinname 3s forwards;
+      -webkit-animation-delay: 0s;
+         -moz-animation-delay: 0s;
+              animation-delay: 0s;
+  }
+  .btn-white{
+    -webkit-animation: fadeinup 2s forwards; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeinup 2s forwards; /* Firefox < 16 */
+        -ms-animation: fadeinup 2s forwards; /* Internet Explorer */
+         -o-animation: fadeinup 2s forwards; /* Opera < 12.1 */
+            animation: fadeinup 2s forwards;
+            opacity:0;
+            top:-100px;
+            &:hover{color:red !important;}
+
+  }
+  .btn-white:nth-child(5){
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
+    -webkit-animation-duration: 2.3s;
+       -moz-animation-duration: 2.3s;
+            animation-duration: 2.3s;
+  }
+  .btn-white:nth-child(6){
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-duration: 2s;
+       -moz-animation-duration: 2s;
+            animation-duration: 2s;
+  }
+  .btn-white:nth-child(7){
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+    -webkit-animation-duration: 2.5s;
+       -moz-animation-duration: 2.5s;
+            animation-duration: 2.5s;
+  }
+  .btn-white:nth-child(8){
+    -webkit-animation-delay: .8s;
+    animation-delay: .8s;
+    -webkit-animation-duration: 2.2s;
+       -moz-animation-duration: 2.2s;
+            animation-duration: 2.2s;
+  }
+
+  hr{
+
+   -webkit-animation: fadeinright 1s forwards;
+      -moz-animation: fadeinright 1s forwards;
+       -ms-animation: fadeinright 1s forwards;
+        -o-animation: fadeinright 1s forwards;
+           animation: fadeinright 1s forwards;
+   }
+  p, .titleheadline{
+
+    -webkit-animation: fadeinleft 2s forwards;
+       -moz-animation: fadeinleft 2s forwards;
+        -ms-animation: fadeinleft 2s forwards;
+         -o-animation: fadeinleft 2s forwards;
+            animation: fadeinleft 2s forwards;
+    }
+    .titleheadline, hr, p{
+    -webkit-animation-delay: 2s;
+       -moz-animation-delay: 2s;
+            animation-delay: 2s;
+            opacity:0;
+    }
+}
+
+@keyframes fadeinup {
+    from { opacity: 0; top:100px;}
+    to   { opacity: 1; top:0;}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeinup {
+    from { opacity: 0; top:100px;}
+    to   { opacity: 1; top:0;}
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinup {
+    from { opacity: 0; top:100px;}
+    to   { opacity: 1; top:0;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinup {
+    from { opacity: 0; top:100px;}
+    to   { opacity: 1; top:0;}
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeinup {
+    from { opacity: 0; top:100px;}
+    to   { opacity: 1; top:0;}
+}
+
+@keyframes fadeinleft {
+    from { opacity: 0; right:-100px; }
+    to   { opacity: 1; right:0;}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeinleft {
+    from { opacity: 0; right:-100px;}
+    to   { opacity: 1; right:0;}
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinleft {
+    from { opacity: 0; right:-100px;}
+    to   { opacity: 1; right:0;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinleft {
+    from { opacity: 0; right:-100px;}
+    to   { opacity: 1; right:0;}
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeinleft {
+    from { opacity: 0; right:-100px;}
+    to   { opacity: 1; right:0;}
+}
+
+
+
+@keyframes fadeinright {
+    from { opacity: 0; left:-100px;}
+    to   { opacity: 1; left:0;}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeinright {
+    from { opacity: 0; left:-100px;}
+    to   { opacity: 1; left:0;}
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinright {
+    from { opacity: 0; left:-100px;}
+    to   { opacity: 1; left:0;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinright {
+    from { opacity: 0; left:-100px;}
+    to   { opacity: 1; left:0;}
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeinright {
+    from { opacity: 0; left:-100px;}
+    to   { opacity: 1; left:0;}
+}
+
+
+@keyframes fadeinname {
+    0% { opacity: 0; top:100px;}
+    50% { opacity: 1; top:100px;}
+    100%   { opacity: 1; top:0px;}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeinname {
+    0% { opacity: 0; top:100px;}
+    50% { opacity: 1; top:100px;}
+    100%   { opacity: 1; top:0px;}
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinname {
+    0% { opacity: 0; top:100px;}
+    50% { opacity: 1; top:100px;}
+    100%   { opacity: 1; top:0px;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinname {
+    0% { opacity: 0; top:100px;}
+    50% { opacity: 1; top:100px;}
+    100%   { opacity: 1; top:0px;}
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeinname {
+    0% { opacity: 0; top:100px;}
+    50% { opacity: 1; top:100px;}
+    100%   { opacity: 1; top:0px;}
+}
+
+//
+// [ui-view].backward {
+//
+//     &.ng-enter {
+//         transform: translate3d(0, 100%, 0);
+//     }
+//     &.ng-enter-active {
+//         transform: translate3d(0, 0, 0);
+//     }
+//     &.ng-leave {
+//         transform: translate3d(0, 0, 0);
+//     }
+//     &.ng-leave-active {
+//         transform: translate3d(0, 100%, 0%);
+//     }
+//
+// }

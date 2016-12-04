@@ -1,0 +1,59 @@
+/* ABOUT ME */
+.block {padding: 50px 0;}
+.first-block {
+    img {width: 60%;}
+    hr {
+        border-color: black;
+        margin: 0 auto;
+    }
+    .overlay {
+        .sec-container {
+            .text-cont {padding-top: 20px;}
+        }
+    }
+}
+.second-block {
+    min-height: 700px;
+    padding-top: 0;
+    background: rgb(240,245,249);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(240,245,249,1) 0%, rgba(252,254,254,1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(240,245,249,1) 0%,rgba(252,254,254,1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(240,245,249,1) 0%,rgba(252,254,254,1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#f0f5f9', endColorstr='#fcfefe',GradientType=1 );
+    /* IE6-9 */
+    width: 100%;
+
+    .overlay {
+        background-image: url('../build/imgsopt/comp.jpg');
+        background-size: 100vw auto;
+        background-repeat: no-repeat;
+        height: auto;
+
+        .sec-container {
+            min-height: 70vw;
+
+            .img-cont {
+                min-height: 550px;
+            }
+            .text-cont {
+                padding-top: 10vw;
+            }
+        }
+    }
+
+    hr {
+        border-color: black;
+        margin: 0 auto;
+    }
+}
+@media (min-width:768px) {}
+@media (min-width:768px) and (max-width:992px) {}
+@media(min-width:992px) {}
+@media(min-width:992px) and (max-width:1200px) {}
+@media(min-width:1200px) {}
+@media(min-width:1200px) and (max-width:1900px) {}
+@media (min-width:1900px) {}

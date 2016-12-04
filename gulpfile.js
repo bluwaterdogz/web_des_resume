@@ -35,7 +35,8 @@ gulp.task('watch', function() {
   // gulp.watch('build/styles/**/*.css').on('change', browsersync.reload);
   gulp.watch('*.html').on('change', browsersync.reload);
   gulp.watch('js/**/*.html').on('change', browsersync.reload);
-  gulp.watch('js/**/*.js').on('change', browsersync.reload);
+  gulp.watch('js/**/*.html').on('change', browsersync.reload);
+  gulp.watch('views/*.html').on('change', browsersync.reload);
   gulp.watch('js/**/*.js').on('change', browsersync.reload);
 });
 

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Brian Velasquez's DM61 Home Page</title>
+	<title>Brian Velasquez's Web Development Portfolio/Resume</title>
 	<!-- normalize -->
 
 	<!-- <link rel="stylesheet" href="styles/css/normalize.css"> -->
@@ -14,6 +14,9 @@
 	<!-- Angular -->
 	<script src="bower_components/angular/angular.min.js"></script>
 	<script src="bower_components/angular-resource/angular-resource.min.js"></script>
+	<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="bower_components/ngtouch/build/ngtouch.min.js"></script>
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -23,6 +26,9 @@
 		'<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"/><link rel="stylesheet" src="bower_components/bootstrap/dist/css/bootstrap.min.css"></link>'
 	);
 	</script>
+	<!--  angular-ui-router -->
+	<!-- // <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script> -->
+
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<!-- CSS Effects -->
@@ -51,267 +57,51 @@
 
 <body ng-app="ResumeApp">
 	<nav-bar></nav-bar>
-	<div id = "divider1" class=" divider">
-		<div class="overlay">
-			<div id="title-cont" >
-				<div id="title-box" >
-					<h1 id="my_name" class="fadeIn animated ">Brian Velasquez</h1>
-					<div class="profcont bounceIn animated ">
-						<img src="build/imgsopt/me.jpg" alt="Hey this is a picture of me!" id="profPic">
-					</div>
-					<h3 class="titleheadline fadeIn animated " style="margin-top:0px;">Front End Web Developer</h3>
-					<a href="https://github.com/bluwaterdogz" class="btn-white">See the Code.</a>
-					<a href="#skills" class="btn-white">See the skills.</a>
-					<script>
-					document.write('<'+'a'+' class="btn-white" '+'h'+'r'+'e'+'f'+'='+"'"+'m'+'a'+'&'+'#'+'1'+'0'
-						+'5'+';'+'l'+'t'+'&'+'#'+'1'+'1'+'1'+';'+'&'+'#'+'5'+'8'+';'+'%'+'6'+'2'+'v'+'e'+'&'+'#'+'1'
-						+'0'+'1'+';'+'d'+'y'+'&'+'#'+'6'+'4'+';'+'&'+'#'+'3'+'7'+';'+'&'+'#'+'5'+'4'+';'+'&'+'#'+'5'
-						+'5'+';'+'m'+'a'+'i'+'&'+'#'+'3'+'7'+';'+'6'+'C'+'&'+'#'+'4'+'6'+';'+'c'+'&'+'#'+'3'+'7'+';'
-						+'6'+'F'+'m'+"'"+'>'+'&'+'#'+'6'+'7'+';'+'o'+'&'+'#'+'1'+'1'+'0'+';'+'t'+'a'+'c'+'t'+' '+'M'
-						+'e'+'<'+'/'+'a'+'>');</script>
-	<noscript>Turn on JavaScript to see my email address ;P</noscript>
-				</div>
-			</div>
-		</div>
-	</div>
-	<section id="statement" class="content">
-		<div class="sec-container">
-			<h2>My Web Design Experience</h2>
-			<hr width="80%">
-			<p class="firstInfo">A junior front end developer dedicated on implementing stunning, engaging and effective designs, he's experienced in Javascript, Python, HTML/CSS, PHP and Java. </br></br> This portfolio, hosted on Github pages, was built using a git and gulp backed dev environment, coded in Atom and Sublime Text IDEs on a combination of AngularJS, Jquery and Bootstrap.</p>
-		</div>
-		<div class="block first-block">
-		<div class="container sec-container">
-			<div class="img-cont col-sm-12 col-md-5">
-				<img src="build/imgsopt/mob-trans-res.png" alt="mobile phone with lb site">
-			</div>
-			<div class="text-cont col-sm-12 col-md-7">
-				<h3>
-				Mobile Friendly
-				</h3>
-					<hr width="80%">
-					<p>This year, online mobile traffic is expected to overtake desktop traffic. Is your website ready?</br>Responsive Web Design is my Jam. Flex-Box? Into it. Media Queries? In the Bag. Whether leveraging Bootstrap, Foundation, SASS or vanilla CSS, I'll make your site shine in a mobile friendly world.</p>
-			</div>
-			</div>
-		</div>
-		<div class="block second-block">
-			<div class="overlay">
-			<div class="sec-container container">
-				<div class="row">
-				<div class="img-cont col-md-6 col-md-push-6 "></div>
-			<div class="text-cont  col-md-6 col-md-pull-6">
+	<div ng-controller="SplashCtrl" id = "divider1" class=" divider" ng-swipe-right="$scope.swipeRight()" ng-swipe-left="$scope.swipeLeft()">
+	  <!-- from https://vimeo.com/115082758 -->
 
-				<h3>
-				API Savy
-				</h3>
-					<hr width="80%">
-					<p>I'm quickly adaptable to a variety of API's. Utilizing Javascript to reach anything from Google maps to more complicated APIs, I'm excited to connect your clients to the data they seek.</p>
-			</div>
-</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	<div class="divider divider2">
-		<div class="overlay"></div>
-	</div>
-	<section id="projects" class="content">
-		<h2>Projects</h2>
-		<hr width="80%">
-		<div class='container'>
-			<div class="col-sm-12 col-md-6 project-pic-cont">
-				<img src="build/imgsopt/james2.jpg" class="transparent img-over">
-				<img src="build/imgsopt/boards.jpg" class="transparent img-over">
-				<img src="build/imgsopt/dansite.jpg" class="transparent img-over">
-				<img src="build/imgsopt/resolutions.png" class="transparent img-over">
-				<img src="build/imgsopt/craigslisttrawler.jpg" class="transparent img-over">
-				<img src="build/imgsopt/php-project.jpg" class="transparent img-over">
-				<div class="img-over wow bounceIn"></div>
-			</div>
-			<div class="project-title-cont col-sm-12 col-md-6">
-				<ul>
-					<li><a href="http://bluwaterdogz.github.io/JamesStatic/" data-pic="build/imgsopt/james2.jpg" target="_blank">James Sauter Portfolio &nbsp</a><a href="https://github.com/bluwaterdogz/JamesStatic" target="_blank"><i class="fa fa-github"></i></a></li>
-					<li><a href="https://bluwaterdogz.pythonanywhere.com/Boards/default/index" data-pic="build/imgsopt/boards.jpg" target="_blank">Boards Web2py App</a>&nbsp<a href="https://github.com/bluwaterdogz/Boards" target="_blank"><i class="fa fa-github"></i></a></li>
-					<li><a href="http://bluwaterdogz.github.io/DanWebsitePortfolio/" data-pic="build/imgsopt/dansite.jpg" target="_blank">Daniel V Portfolio &nbsp</a><a href="https://github.com/bluwaterdogz/DanWebsitePortfolio" target="_blank"><i class="fa fa-github"></i></a></li>
-					<!-- <li><a href="http://resolutionsbv.meteor.com/" data-pic="build/imgsopt/resolutions.png" target="_blank">Meteorjs Resolutions App </a> &nbsp<a href="https://github.com/bluwaterdogz/MeteorResolutions" data-pic="build/imgsopt/resolutions.png" target="_blank"><i class="fa fa-github"></i></a></li> -->
-					<li><a href="https://github.com/bluwaterdogz/MeteorResolutions" data-pic="build/imgsopt/resolutions.png" target="_blank">Meteorjs Resolutions App </a></li>
-					<li><a href="https://github.com/bluwaterdogz/CraigslistTrawlerApp" data-pic="build/imgsopt/craigslisttrawler.jpg" target="_blank">Craigslist Trawler</a></li>
-					<li><a href="https://github.com/bluwaterdogz/PHPLoginDemo" data-pic="build/imgsopt/php-project.jpg" target="_blank">Movie rating App </a></li>
-				</ul>
-			</div>
-			<div class="col-md-12 disclaimer">
-					<p >Hover over links for pictures of each project or click to visit the github repo or project site.</p>
-			</div>
-		</div>
-	</section>
+	<video src="build/video/forst-trim.mp4" autoplay loop muted></video>
+	  <div class="overlay flexbox-container">
 
-	<div class="divider divider3">
-		<div class="overlay"></div>
+	    <div id="title-cont" >
+	      <div id="title-box" >
+	        <h1 id="my_name" class=" ">Brian Velasquez</h1>
+	        <h3 class="titleheadline " style="margin-top:0px;">Front End Web Developer</h3>
+	        <hr>
+
+	        <p>choose one and scroll down for more info</p>
+
+	        <a ui-sref="skills" class="btn-white">See the skills.</a>
+	        <a ui-sref="experiences" class="btn-white">See the Work.</a>
+	        <a ui-sref="about" class="btn-white">About me.</a>
+	        <a href="https://github.com/bluwaterdogz" class="btn-white">See the Code.</a>
+
+	        <i class="fa fa-arrow-down"></i>
+	      </div>
+	    </div>
+	  </div>
 	</div>
 
-	<section id="education" class="content fluid-container" ng-controller="ExperienceCtrl as exps">
-		<h2>On Campus Classes</h2>
-		<h3>Click for more info</h3>
-		<hr width="80%">
-		<div class="col-sm-4 educationcontainer">
-			<div ng-repeat="exp in exps.experiences  | expFilter:0">
-				<exp-info info="exp"></exp-info>
-			</div>
-		</div>
-		<div class="col-sm-4 educationcontainer">
-			<div ng-repeat="exp in exps.experiences  | expFilter:1">
-				<exp-info info="exp"></exp-info>
-			</div>
-		</div>
-		<div class="col-sm-4 educationcontainer">
-			<div ng-repeat="exp in exps.experiences  | expFilter:2">
-				<exp-info info="exp"></exp-info>
-			</div>
-		</div>
-		<div class="col-md-12 clear disclaimer">
-			<p>Other relevant classes include: Introduction to C++ programming & Introduction to Java Programming using games and simulations</p>
-		</div>
-	</section>
-
-	<div class="divider divider4">
-		<div class="overlay"></div>
-	</div>
-
-	<section id="skills" class="content" ng-controller="SkillsCtrl as skills">
-		<h2>Skills</h2>
-		<hr width="80%">
-		<div class="row">
-		<div class="skills-cont col-sm-6 ">
-			<div class="code-sec">
-			<div class="overlay">
-			<span class="skills-icon"><i class="fa fa-code"></i></span>
-			<ul>
-				<li class="skills-list-item">Python</li>
-				<li class="skills-list-item">Javascript/Jquery</li>
-				<li class="skills-list-item">Java</li>
-				<li class="skills-list-item">PHP</li>
-				<li class="skills-list-item">HTML5/CSS3</li>
-			</ul>
-</div>
-			</div>
-		</div>
-		<div class="skills-cont col-sm-6 ">
-			<div class="design-sec">
-			<div class="overlay">
-			<span class="skills-icon"><i class="fa fa-pencil"></i></span>
-			<ul>
-				<li class="skills-list-item">Photoshop</li>
-				<li class="skills-list-item">Illustrator</li>
-				<li class="skills-list-item">Foundation</li>
-				<li class="skills-list-item">Bootstrap</li>
-				<li class="skills-list-item">Sketch</li>
-			</ul>
-		</div>
-		</div>
-</div>
-		</div>
-		<div class="skills-cont col-sm-6 ">
-			<div class="mobile-sec">
-			<div class="overlay">
-			<span class="skills-icon"><i class="fa fa-mobile-phone"></i></span>
-
-		<ul>
-			<li class="skills-list-item">Android Studio</li>
-			<li class="skills-list-item">Java</li>
-			<li class="skills-list-item">Firebase</li>
-			<li class="skills-list-item">Xcode</li>
-			<li class="skills-list-item">Swift</li>
-		</ul>
-				</div>
-				</div>
-				</div>
-		<div class="skills-cont col-sm-6 ">
-			<div class="it-sec">
-			<div class="overlay">
-			<span class="skills-icon"><i class="fa fa-gears"></i></span>
-			<ul>
-				<li class="skills-list-item">Angular</li>
-				<li class="skills-list-item">Web2Py</li>
-				<li class="skills-list-item">Wordpress</li>
-				<li class="skills-list-item">Git</li>
-				<li class="skills-list-item">Gulp</li>
-			</ul>
-			</div>
-		</div>
-		</div>
-	</div>
-
-		<div class="langlist">
-			<div ng-repeat="skill in skills.collection">
-				<div>
-					momo
-					<skills-info info="skill"></skills-info>
-				</div>
-			</div>
-		</div>
-
-			<hr width="80%">
-			<p>
-				Other Languages & Frameworks: JSON, SCSS, Meteor.js, AngularJS
-				<br> IDE experience: Sublime Text, EMACs, Android Studio, XCode, PyCharm, MAMP
-			</p>
-
-		</div>
-	</section>
-
-	<div class="divider divider5">
-		<div class="overlay"></div>
-	</div>
-
-	<section id="experience" class="content">
-		<h2>Professional Experience</h2>
-		<hr width="80%">
-		<div style="margin:auto; width:90%">
-			<div class="workexperience sway col-sm-4">
-				<img src="build/imgsopt/logosleepless.png" alt="">
-				<a href="http://www.sleeplessmedia.com/">
-						Sleepless Media
-					</a>
-				<br>
-				<a href="http://www.sleeplessmedia.com/">
-						Junior Web Developer
-					</a>
-
-			</div>
-			<div class="workexperience sway col-sm-4">
-				<img src="build/imgsopt/logooimba1.png" alt="">
-				<a href="http://www.oimba.com/">
-						Once In Motion
-					</a>
-				<br>
-				<a href="http://www.oimba.com/">
-						Graphic Design Intern
-					</a>
-			</div>
-			<div class="workexperience sway col-sm-4">
-				<img src="build/imgsopt/logolb.png" alt="">
-				<a href="http://launchbrigade.com">
-						Launch Brigade
-					</a>
-				<br>
-				<a href="http://launchbrigade.com">
-						Web Developer
-					</a>
-			</div>
-		</div>
-		<div class="clear">
-			<p>Previous unlisted work experience in Molecular Biology, refrences availiable upon request.</p>
-		</div>
-	</section>
-
+	<div ui-view></div>
 	<div class="divider divider6">
-		<div class="overlay">
-
-		<!-- <h3 style="color:white;">Hire me</h3> -->
-		</div>
+	  <div class="overlay">
+							<div class="profcont bounceIn animated ">
+								<img src="build/imgsopt/me.jpg" alt="Hey this is a picture of me!" id="profPic">
+							</div>
+	  </div>
 	</div>
 
 	<footer class="content footercontainer">
+
+						<script>
+						document.write('<'+'a'+' class="btn-white" '+'h'+'r'+'e'+'f'+'='+"'"+'m'+'a'+'&'+'#'+'1'+'0'
+							+'5'+';'+'l'+'t'+'&'+'#'+'1'+'1'+'1'+';'+'&'+'#'+'5'+'8'+';'+'%'+'6'+'2'+'v'+'e'+'&'+'#'+'1'
+							+'0'+'1'+';'+'d'+'y'+'&'+'#'+'6'+'4'+';'+'&'+'#'+'3'+'7'+';'+'&'+'#'+'5'+'4'+';'+'&'+'#'+'5'
+							+'5'+';'+'m'+'a'+'i'+'&'+'#'+'3'+'7'+';'+'6'+'C'+'&'+'#'+'4'+'6'+';'+'c'+'&'+'#'+'3'+'7'+';'
+							+'6'+'F'+'m'+"'"+'>'+'&'+'#'+'6'+'7'+';'+'o'+'&'+'#'+'1'+'1'+'0'+';'+'t'+'a'+'c'+'t'+' '+'M'
+							+'e'+'<'+'/'+'a'+'>');</script>
+						<noscript>Turn on JavaScript to see my email address ;P</noscript>
+
 		<p class="disclaimer">All pictures have Creative Commons license or taken by the designer unless otherwise noted.</p>
 		<a href="" class="backToTop btn btn-primary hvr-ripple-out">Back to Top</a>
 	</footer>
@@ -322,8 +112,10 @@
 	<script src="js/app.js"></script>
 
 	<!-- Controllers -->
-	<script src="js/controllers/experiencectrl.js"></script>
+	<script src="js/controllers/experienceCtrl.js"></script>
 	<script src="js/controllers/skillsCtrl.js"></script>
+	<script src="js/controllers/projectCtrl.js"></script>
+	<script src="js/controllers/splashCtrl.js"></script>
 
 	<!-- Directives -->
 	<script src="js/directives/experienceInfo.js"></script>
@@ -332,10 +124,15 @@
 
 	<!-- Services -->
 	<script src="js/services/classesService.js"></script>
+	<script src="js/services/projectService.js"></script>
 	<script src="js/services/skillsService.js"></script>
 
 	<!-- Filters -->
 	<script src="js/filters/threeColumnFilter.js"></script>
+
+	<!-- Router-->
+
+	<script src="js/routes/config.js"></script>
 
 	<!-- WOW -->
 	<script src="js/vendor/wow.min.js"></script>

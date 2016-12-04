@@ -1,13 +1,13 @@
-<div class="expBox wow flipInX">
+<div class="expBox wow flipInX {{info.icon}}-exp">
 	<span style="text-align:center;">
 		<p class="icon-container">
-			<i class="fa {{info.icon}}"></i>
+			<i class="fa fa-{{info.icon}}"></i>
 		</p>
 		<h3 class="class-title">
 			<a ng-click="anim(); showDeets=!showDeets;">{{info.title}}</a>
 		</h3>
 		<p>
-			<i>{{info.date}}</i>
+			{{info.date}}
 		</p>
 		<p class="desc" ng-class="desc" ng-show="showDeets">
 			{{info.description}}

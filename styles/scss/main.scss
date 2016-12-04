@@ -5,25 +5,18 @@ Title: Main css page for Brian Velasquez's resume
 */
 @import "resources/variables",
         "resources/mixins",
+        "resources/fonts",
+        "splash",
+        "about",
+        "intro",
+        "skills",
+        "work",
+        "projects",
         "global",
-        "small",
-        "medium",
-        "large",
-        "xlarge",
+        "animations",
         "components/nav";
-@font-face
-{
-    font-family: 'frente';
-    src: url('../build/assets/fonts/frente-h1/FrenteH1-Regular.otf');
-}
 
-.workexperience{
-  img{
-    display:block;
-    margin:0 auto 30px;
-    height:100px;
-  }
-}
+
 header
 {
 
@@ -32,36 +25,7 @@ header
     background-color: rgba(254,248,245,.9);
 
 }
-#divider1
-{
-  .overlay{
-      padding: 5% 10%;
-    background-color: rgba(0,0,0,.4);
-  }
-  h1{
-    color:white;
-  }
-  #my_name{
 
-  }
-  #title-cont
-  {
-    background:rgba(0,0,0,0);
-    padding:0%;
-  }
-  #title-box h3
-  {
-    color:white;
-  }
-  .titleheadline
-  {
-
-  }
-  .btn-white{
-    margin:20px 5px;
-  }
-
-}
 /* HEADER */
 ul
 {
@@ -85,279 +49,9 @@ header li a
 
     color: black;
 }
-/* ABOUT ME */
-.block{
-  padding:50px 0;
-}
-.first-block{
-    img{width: 100%;}
-    hr{
-      border-color: black;
-      margin:0px auto;
-    }
-    .overlay{
-      .sec-container{
-        .text-cont{padding-top: 20px;}
-      }
-  }
 
-}
-.second-block{
-  min-height:700px;
-  padding-top: 0;
 
-  background: rgb(240,245,249); /* Old browsers */
-  background: -moz-linear-gradient(left, rgba(240,245,249,1) 0%, rgba(252,254,254,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, rgba(240,245,249,1) 0%,rgba(252,254,254,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, rgba(240,245,249,1) 0%,rgba(252,254,254,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f5f9', endColorstr='#fcfefe',GradientType=1 ); /* IE6-9 */
-  width:100%;
-  .overlay{
-  background-image: url('../build/imgsopt/comp.jpg');
-  background-size: 100vw auto;
-  background-repeat: no-repeat;
-  height: auto;
-    .sec-container{
-      min-height:900px;
-      .img-cont{
-        min-height:500px;
-      }
 
-    }
-
-}
-  hr{
-    border-color: black;
-    margin:0px auto;
-  }
-  // p{color:white;}
-  // h3{color:white;}
-}
-
-/* Classes/skills */
-#skills{
-  .row{
-    margin-right:0;
-    margin-left:0;
-  }
-  .skills-cont{
-    padding: 60px;
-    height: auto;
-    .overlay{
-      height: auto;
-      margin:0;
-      padding: 20px 20px;
-      ul{margin-bottom: 0;}
-      span{color:white;}
-      li.skills-list-item{color:white;}
-      background-color:rgba(0,0,0,.8);
-      -webkit-transition: 500ms;
-      -o-transition: 500ms;
-      transition: 500ms;
-      &:hover{
-        background-color:rgba(250,250,250,.8);
-        span{color:black;}
-        li.skills-list-item{color:black;}
-      }
-    }
-  }
-
-  .mobile-sec{
-    background-image: url('../build/imgsopt/mobile_skills.jpg');
-  }
-  .it-sec{
-    background-image: url('../build/imgsopt/it_skills.jpg');
-  }
-  .design-sec{
-    background-image: url('../build/imgsopt/design_skills.jpg');
-  }
-  .code-sec{
-    background-image: url('../build/imgsopt/coding_skills.jpg');
-  }
-}
-.langlist
-{
-    font-size: 25px;
-
-    text-align: center;
-
-}
-.langlist table
-{
-    margin: 20px auto;
-}
-.langlist td,
-th
-{
-    margin: auto;
-    padding: 10px;
-
-    -webkit-transition: .5s;
-         -o-transition: .5s;
-            transition: .5s;
-    text-align: center;
-}
-table
-{
-    margin: 0;
-}
-.langlist td:hover
-{
-    -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-         -o-transform: scale(1.1);
-            transform: scale(1.1);
-}
-
-a[ng-click]
-{
-    cursor: pointer;
-}
-a:hover
-{
-    text-decoration: none;
-}
-th
-{
-    font-size: 40px;
-}
-
-#skills
-{
-  text-align: center;
-  .skills-icon{
-      font-size: 60px;
-  }
-  .skills-list-item{
-    font-size: 40px;
-  }
-
-  img
-  {
-      width: 180px;
-
-      -webkit-transition: 500ms;
-           -o-transition: 500ms;
-              transition: 500ms;
-
-      border: 1px solid black;
-      border-radius: 100px;
-  }
-}
-
-.sideinfo
-{
-    position: absolute;
-    top: -100px;
-    left: 10%;
-
-    width: 250px;
-    padding: 10px;
-
-    -webkit-transition: 500ms;
-         -o-transition: 500ms;
-            transition: 500ms;
-
-    border: 1px solid black;
-    border-radius: 5px;
-    background: rgba(250,250,250,.8);
-}
-.sideinfoR
-{
-    /*left:-190%;*/
-}
-.skill
-{
-    position: relative;
-    z-index: 1;
-
-    display: inline-block;
-
-    margin-top: 50px;
-    margin-left: 50px;
-
-}
-
-.skill img:hover,
-.skill img:hover + *
-{
-    -webkit-transform: scale(1.5);
-        -ms-transform: scale(1.5);
-         -o-transform: scale(1.5);
-            transform: scale(1.5);
-
-    opacity: 1;
-}
-
-.skilltitle
-{
-    width: 20vw;
-}
-.langlvl
-{
-    width: 10vw;
-}
-.skillclasses
-{
-    width: 50vw;
-}
-.likebtn
-{
-    width: 20vw;
-}
-.class-title{
-  font-size:40px;
-  padding:10px;
-}
-
-/* Projects */
-#projects{
-    overflow: auto;
-    width: 100%;
-    text-align: center;
-}
-#projects ul
-{
-    list-style: none;
-
-    text-align: left;
-}
-#projects a
-{
-    font-size: 40px;
-    font-weight: bold;
-
-    text-decoration: none;
-
-    color: #202020;
-}
-.disclaimer
-{
-  margin:40px auto;
-}
-.img-over
-{
-    position: absolute;
-    right: 10%;
-    width: 360px;
-    height: 360px;
-    margin-top: 20px;
-
-    -webkit-transition: 1s;
-         -o-transition: 1s;
-            transition: 1s;
-
-    border: 2px solid #202020;
-    border-radius: 200px;
-    box-shadow: 0 0 20px 5px #000;
-}
-.project-title-cont ul{
-  margin-top: 20px;
-}
-.transparent
-{
-    opacity: 0;
-}
 
 /* Education */
 
@@ -382,11 +76,16 @@ th
 
   -webkit-box-shadow: 0 0 10px 5px rgba(200,200,200,.8);
   box-shadow: 0 0 10px 5px rgba(200,200,200,.8);
-
     border: 3px black solid;
+  &.code-exp{background-image: url('../build/imgsopt/coding_skills.jpg');}
+  &.gears-exp{background-image: url('../build/imgsopt/it_skills.jpg');}
+  &.pencil-exp{background-image: url('../build/imgsopt/design_skills.jpg');}
+  &.mobile-phone-exp{background-image: url('../build/imgsopt/mobile_skills.jpg');}
     .icon-container{
       font-size: 50px;
+      i{color:white;}
     }
+    p{color:white;}
 }
 .expBox:hover
 {
@@ -397,88 +96,8 @@ th
     -ms-transform: scale(1.05);
     transform: scale(1.05);
 }
-li
-{
-    -webkit-transition: 500ms;
-         -o-transition: 500ms;
-            transition: 500ms;
-}
-#projects li:hover
-{
-    transform: scale(1.2);
-}
-.projects
-{
-    width: 40%;
-    margin: 20px;
-}
-.viewer
-{
-    position: relative;
-    top: 50px;
 
-    float: left;
 
-    width: 50%;
-    height: 40%;
-}
-.sway{
-  position:relative;
-}
-/* Experience */
-.workexperience {
-  margin:70px 0;
-  a{
-    font-size: 40px;
-
-}
-}
-.employers
-{
-
-    /*height:300px;*/
-    overflow: hidden;
-    /*border-radius:100%;*/
-
-    width: 300px;
-}
-
-/* footer */
-.footercontainer .disclaimer
-{
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 30px;
-}
-.firstInfo
-{
-    margin: 0 auto;
-    padding: 30px 0;
-}
-.profcont
-{
-    overflow: hidden;
-
-    width: 300px;
-    height: 300px;
-    margin: auto;
-
-    -webkit-transition: 500ms;
-         -o-transition: 500ms;
-            transition: 500ms;
-
-    border: 4px solid white;
-    border-radius: 100%;
-}
-.profcont:hover
-{
-    transform: scale(1.2);
-}
-#profPic
-{
-    width: auto;
-    height: 300px;
-}
 .content
 {
   -webkit-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.75);
@@ -546,25 +165,16 @@ li
 }
 .footercontainer
 {
-    height: 20vh;
+    min-height: 20vh;
+    padding: 20px;
 }
-.btn
-{
-    font-size: 20px;
 
-    width: 100px;
 
-    -webkit-transition: 500ms;
-         -o-transition: 500ms;
-            transition: 500ms;
+@media (min-width:768px) and (max-width:992px){
 
-    color: black;
-    border-radius: 5px;
-    background-color: rgba(0,0,0,0);
+.langlist{
+  font-size:30px;
 }
-.btn:hover
-{
-    font-weight: bold;
-    color: blue;
-    background-color: rgba(200,250,250,.6);
+
+
 }

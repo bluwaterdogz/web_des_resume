@@ -1,0 +1,127 @@
+#divider1{
+  z-index: 1000;
+  overflow: hidden;
+  .overlay{
+      padding: 5% 10%;
+      background-color: rgba(0,0,0,.3);
+      min-height: 100vh;
+      position: relative;
+
+  }
+  video{
+    width:100vw;
+    min-width:190vh;
+    min-height:100vh;
+
+    position: absolute;
+    top:0;
+    left:0;
+  }
+  h1#my_name{
+    color:white;
+    font-size: 100px;
+    font-family: 'Montserrat-thin';
+padding:0;
+    // color:rgba(0,0,0,0);
+    // -webkit-text-stroke-color: rgb(255,255,255);
+    // -webkit-text-stroke-width: 1px;
+    // -webkit-font-smoothing: antialiased;
+
+  }
+  #title-cont
+  {
+    background:rgba(0,0,0,0);
+    padding:0%;
+  }
+  #title-box
+  {
+    .titleheadline
+    {
+
+      color:white;
+
+      font-size: 30px;
+      font-family: 'Montserrat-UltraThin';
+      padding: 20px 0;
+    }
+
+
+    // color:rgba(0,0,0,0);
+    // -webkit-text-stroke-color: rgb(255,255,255);
+    // -webkit-text-stroke-width: 1px;
+    // -webkit-font-smoothing: antialiased;
+  }
+
+  .btn-white{
+    margin:20px 5px;
+    z-index: 20;
+    position: relative;
+
+    font-family: 'Montserrat-Thin';
+  }
+  hr, i, p{position: relative;}
+  hr{
+    // -webkit-transition: 900ms;
+    // -o-transition: 900ms;
+    // transition: 900ms;
+    width:60%;
+  }
+  p{
+    font-size: 30px;
+    color:white;
+    font-family:$main-font;
+  }
+  &:hover{
+    hr{
+      // width:80%;
+    }
+  }
+}
+@media (max-width:767px){
+  #divider1{
+    #title-box{
+      position:relative;
+    }
+    #my_name{
+      font-size:80px;
+    }
+    .profcont{
+      width:200px;
+      height: 200px;
+      #profPic{
+        width:250px;
+        height: 200px;
+      }
+
+    }
+    .btn-white{
+      display: block;
+    }
+  }
+}
+@media (min-width:768px) and (max-width:992px){
+  .divider{
+      background-size: 100vw 100vh;
+  }
+  .divider1{
+      height: 55vh;
+      text-align: center;
+      background-size: 100vh 100vh;
+  }
+  #title-box h3.titleheadline{
+      font-size: 5vw;
+      color:black;
+  }
+}
+@media(min-width:992px)and (max-width:1200px){}
+@media (min-width:1900px)
+{
+    .divider1
+    {
+        background-size: 100vh 100vh;
+    }
+    .divider
+    {
+        background-size: 100% 100vh;
+    }
+}

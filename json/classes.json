@@ -5,7 +5,7 @@
     "location":"UCSC",
     "date":"Fall 2015",
     "description":"Web Application development using Web2Py and angularJS.",
-    "icon": "fa-code"
+    "icon": "code"
   },
   {
     "id":2,
@@ -13,7 +13,7 @@
     "location":"Cabrillo",
     "date":"Spring 2015",
     "description":"First course in web publishing series based on HTML and CSS",
-    "icon":"fa-pencil"
+    "icon":"pencil"
   },
   {
     "id":3,
@@ -21,7 +21,7 @@
     "location":"Cabrillo",
     "date":"Winter 2015",
     "description":"Introduction to browser based Javascript.",
-    "icon":"fa-code"
+    "icon":"code"
   },
   {
     "id":4,
@@ -29,7 +29,7 @@
     "location":"Cabrillo",
     "date":"Spring 2015",
     "description":"Mobile app development using Android studio and Xcode with either Java or Swift Programming languages.",
-    "icon": "fa-mobile-phone"
+    "icon": "mobile-phone"
   },
 
   {
@@ -38,7 +38,7 @@
     "location":"Cabrillo",
     "date":"Spring 2015",
     "description":"Introduction to PHP server-side programming language as an OOP and the implementation of SQL into websites programmed with it.",
-    "icon":"fa-code"
+    "icon":"code"
   },
   {
     "id":6,
@@ -46,7 +46,7 @@
     "location":"Cabrillo",
     "date":"Fall 2015",
     "description":"Introduction to OOP Java, followed by an intermediate Java class covering common data structures and java concepts.",
-    "icon":"fa-code"
+    "icon":"code"
   },
 
   {
@@ -55,7 +55,7 @@
     "location":"UCSC",
     "date":"Winter 2016",
     "description":"Intermediate project based class in Java Android Development.",
-    "icon": "fa-mobile-phone"
+    "icon": "mobile-phone"
   },
   {
     "id":8,
@@ -63,7 +63,7 @@
     "location":"Cabrillo",
     "date":"Spring 2016",
     "description":"Introduction to managing and maintaining relational SQL databases",
-    "icon": "fa-gears"
+    "icon": "gears"
   },
   {
     "id":9,
@@ -71,6 +71,6 @@
     "location":"Cabrillo",
     "date":"Spring 2016",
     "description":"Introduction to and analysis of Common Algorithms and Data srtuctures",
-    "icon":"fa-gears"
+    "icon":"gears"
   }
 ]

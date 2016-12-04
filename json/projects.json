@@ -1,38 +1,102 @@
 [
   {
+  "title":"Launch Brigade 2.0",
+  "type":"website",
+  "skills":["Wordpress","Web Design", "Graphic Design", "Web Development", "Animations"],
+  "technologies":["Javascript","PHP", "HTML5/SASS", "Git", "Gulp"],
+  "description":"Launch Brigade needed a new, modern site to reflect the contemprary Development work they do. The responsive wordpress site I created for them reflects these modern values and abilities retaining SEO value and simplicity of content managment.",
+  "img":"imgs/dansite2.jpg",
+  "url":"www.launchbrigade.com",
+  "project-url":""
+  },
+  {
   "title":"James Sauter Portfolio",
+  "type":"Website",
   "img":"imgs/james2.jpg",
+  "skills":["Web Design", "Graphic Design", "Web Development", "Javascript Animations"],
+  "technologies":["Javascript", "PHP", "HTML5/CSS3", "Git"],
+  "description":"James Sauter's art is as abstract and unique as the artist himself, and he needed a site that showcased the distinctive quality of his art. This one of a kind static site accurately reflects the dynamism and otherworldly quality of his works.",
   "url":"http://bluwaterdogz.github.io/JamesStatic/",
+  "project-url":"http://bluwaterdogz.github.io/JamesStatic/"
   },
   {
   "title":"Boards Web2py App",
+  "type":"Web Application",
+  "skills":["Git", "Web2py", "UX/UI", "Full-Stack Web Development"],
+  "technologies":["Ractive", "Python", "HTML5/SASS", "Git"],
+  "description":"This educational project utilizes the features of a modern web application. Utilizing User Authenticaiton, token authentication, link signatures, a Python MVC backend framework, and a modern 2 way binding Javascript Framework, it's a secure easy to use discussion board app that can be reskinned for any purpose.",
   "img":"imgs/boards.jpg",
   "url":"https://bluwaterdogz.pythonanywhere.com/Boards/default/index",
+  "project-url":"http://bluwaterdogz.github.io/DanWebsitePortfolio/"
   },
   {
-  "title":"Daniel V Portfolio",
-  "img":"imgs/dansite.jpg",
-  "url":"http://bluwaterdogz.github.io/DanWebsitePortfolio/",
+  "title":"Daniel V Art",
+  "type":"website",
+  "skills":["Web Design", "Graphic Design", "Web Development"],
+  "technologies":["jQuery", "HTML5/CSS3", "Git"],
+  "description":"Daniel Velasquez is a burgeoning artist in San Francisco trying to increase awareness of his multimedia masterpieces. This site and helped him to reach a broader audience, and retain a hub for communication about and promotion of his products.",
+  "img":"imgs/dansite2.jpg",
+  "url":"www.danielvelasquez.com",
+  "project-url":"http://bluwaterdogz.github.io/DanWebsitePortfolio/"
   },
   {
-  "title":"Meteorjs Resolutions App",
+  "title":"Zoccolis",
+  "type":"website",
+  "skills":["Web Design", "Graphic Design", "Squarespace", "Web Development"],
+  "technologies":["HTML5/CSS3", "Squarespace"],
+  "description":"Zoccolis needed an easily navigateable site to make visitors drool over their delicious meals and replace their aged site. The site created promotes their delicious food and makes it easy to see the meals offered, if you're hungry go ahead and check it out. ",
+  "img":"imgs/zoccolis.jpg",
+  "url":"www.zoccolis.com",
+  "project-url":"http://bluwaterdogz.github.io/DanWebsitePortfolio/"
+  },
+  {
+  "title":"Meteorjs Resolutions",
+  "type":"Web Application",
+  "skills":[ "UX/UI", "Full-Stack Web Development"],
+  "technologies":["Git", "Meteorjs","HTML5/CSS3"],
+  "description":"",
   "img":"imgs/resolutions.png",
   "url":"http://resolutionsbv.meteor.com/",
-  "githubUrl":"https://github.com/bluwaterdogz/MeteorResolutions"
+  "project-url":"https://github.com/bluwaterdogz/MeteorResolutions"
   },
   {
   "title":"Angular Todo App",
+  "type":"Web Application",
+  "skills":[ "UX/UI", "Front-End Web Development"],
+  "technologies":["Git", "Angularjs", "HTML5/CSS3"],
+  "description":"",
+  "img":"imgs/",
   "url":"https://github.com/bluwaterdogz/angularTodo",
+  "project-url":"https://github.com/bluwaterdogz/MeteorResolutions"
   },
   {
   "title":"Craigslist Trawler",
+  "type":"Mobile Application",
+  "skills":[ "Mobile Development", "Mobile Design", "UX/UI"],
+  "technologies":["Git", "Android Studio", "Java", "XML"],
+  "description":"This Mobile Application scrapes Craigslist data on command to return a list of matches based on a set of parameters. It showcases my abilities to integrate an api into a mobiel framework and write Android code that performs Asynchronous requests.",
   "img":"imgs/craigslisttrawler.jpg",
   "url":"https://github.com/bluwaterdogz/CraigslistTrawlerApp",
+  "project-url":""
+  },
+  {
+  "title":"Tutors",
+  "type":"Mobile Application",
+  "skills":[ "Mobile Development", "Mobile Design", "UX/UI", "API Integration"],
+  "technologies":["Git", "Android Studio", "Java", "XML", "Firebase"],
+  "description":"This Mobile Application employs Firebase to create a Social Android application. Utilizing Geolocation, Chat Functionality, User Authentication, 2-way data binding and a modern design, it showcases my mobile development skills and also serves as a general purpose chasis which can be reskinned and expanded upon to serve a broad range of purposes.",
+  "img":"imgs/",
+  "url":"",
+  "project-url":""
   },
   {
   "title":"Movie rating App",
-  "img":"imgs/php-project.jpg",
+  "type":"Web Application",
+  "skills":["Full-Stack Development"],
+  "technologies":["PHP", "SQL", "HTML5/CSS3"],
+  "description":"",
   "url":"https://github.com/bluwaterdogz/PHPLoginDemo",
-  "githubUrl":"https://github.com/bluwaterdogz/MeteorResolutions"
+  "img":"imgs/php-project.jpg",
+  "project-url":""
   }
 ]

@@ -1,0 +1,44 @@
+/* Work Experience */
+#experience {
+  background-color:$secondary-color;
+    #work-cont{
+      margin:auto;
+      width:90%;
+      max-width:1200px;
+
+    h2 {color: white;}
+    .workexperience {
+        margin: 70px 0;
+        .sway {position: relative;}
+        .employers {
+            overflow: hidden;
+            width: 300px;
+        }
+        a.company-name {
+            font-size: 40px;
+            color: white;
+        }
+        a.professional-title {
+            font-size: 30px;
+            color: white;
+        }
+        img {
+            display: block;
+            margin: 0 auto 30px;
+            height: 100px;
+        }
+    }
+    p{
+      color:white;
+      font-family: 'Montserrat-Thin';
+    }
+  }
+}
+@media (max-width:767px) {}
+@media (min-width:768px) {}
+@media (min-width:768px) and (max-width:992px) {}
+@media(min-width:992px) {}
+@media(min-width:992px) and (max-width:1200px) {}
+@media(min-width:1200px) {}
+@media(min-width:1200px) and (max-width:1900px) {}
+@media (min-width:1900px) {}
