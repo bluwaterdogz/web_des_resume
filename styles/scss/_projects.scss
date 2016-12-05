@@ -1,5 +1,21 @@
 /* Projects */
 #projects {
+  .intro{
+    background-image: url("../imgs/test.jpeg");
+    background-size: cover;
+    // background-position: fixed;
+    background-attachment: fixed;
+
+    .overlay{
+      background-color: rgba(255,255,255,.85);
+
+      padding:100px 20px;
+    }
+  }
+  .row{
+    margin-right:0;
+    margin-left:0;
+  }
     overflow: auto;
     width: 100%;
     text-align: center;
@@ -11,106 +27,116 @@
       width:50%;
     }
     .topic-text{
-      margin-bottom: 50px;
+
       font-size: 25px;
       font-family: $main-font;
     }
+
     .container{
       margin:0;
       padding: 0;
       width:100%;
-      div.project-pic-cont{
-        padding: 0;
+      position: relative;
+      .content-container{
+        padding:0;
       }
       .project-desc{
-        h3{
-          margin:80px 0 auto;
-          padding:0;
-        }
-        .desc{
-          .desc-text{
-            font-family: $main-font;
-            font-size: 20px;
-            text-align: right
-          }
+        .row{
+          height: 100%;
 
         }
-        .skills-list{
-          ul{
-            margin-top:40px;
-            li{
-              text-align: left;
-              font-size:30px;
+        .image-container{
+          padding:0;
+
+        }
+      div.project-pic-cont{
+
+
+        height:400px;
+        background-size: cover;
+        padding: 0;
+        .overlay{
+          height:inherit;
+          background-color: rgba(0,0,0,.3)
+        }
+        .title-cont{
+          position:absolute;
+          width:100%;
+          top:40%;
+          h3{
+            color:white;
+            padding:0;
+            a{
+              color:white;
             }
+            @include trans(500ms)
+          }
+          hr{
+            border-color:white;
+            width:0;
+            @include trans(500ms)
+          }
+        }
+        &:hover{
+          h3{
+            // background-color: rgba(0,0,0,.3);
+          }
+          hr{
+            width:80%;
+          }
+        }
+      }
+      .description-container{
+        .row{
+          display:flex;
+          justify-content: center;
+        }
+
+
+          padding:0px 0px;
+          .desc{
+            display:flex;
+            align-items: center;
+            .desc-text{
+              font-family: $main-font;
+              font-size: 17px;
+              text-align: right
+            }
+
+          }
+          .process{
+            .process-text{
+              font-family: $main-font;
+              font-size: 20px;
+              text-align: left;
+            }
+          }
+          .skills-list, .tech-list{
+            display:flex;
+            align-items: center;
+            ul{
+              // margin-top:40px;
+              li{
+                font-size:25px;
+                color:$secondary-color;
+                @include trans(500ms)
+              }
+            }
+          }
+          .tech-list{
+            li{text-align: right;}
+          }
+          .skills-list{
+            li{text-align: left;}
           }
         }
       }
     }
-    ul {
-
-    }
-
-    a {
-
-    }
-
-    .disclaimer {
-        margin: 40px auto;
-    }
-
-    .img-over {
-      width:100%;
-    }
-
-    .project-title-cont ul {
-
-    }
-
-    .transparent {
-
-    }
-
-    li {
-
-    }
-
-    li:hover {
-
-    }
-
-    .projects {
-
-    }
-
-    .viewer {
-
-    }
-    @media (max-width:767px) {
-        .project-title-cont {
-
-            li {
-
-            }
-        }
-
-        .project-pic-cont {
-
-        }
-
-        .disclaimer {
-
-        }
-    }
+    .disclaimer {margin: 40px auto;}
+    .img-over {width:100%;}
+    @media (max-width:767px) {}
     @media (min-width:768px) {}
-    @media (min-width:768px) and (max-width:992px) {
-        .project-pic-cont {
-
-        }
-          .project-title-cont{ li {
-
-          }
-        }
-    }
+    @media (min-width:768px) and (max-width:992px) {}
     @media(min-width:992px) {}
     @media(min-width:992px) and (max-width:1200px) {}
     @media(min-width:1200px) {}

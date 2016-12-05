@@ -1,11 +1,12 @@
 /* Classes/skills */
 #skills{
+  padding:60px 0 ;
   .row{
     margin-right:0;
     margin-left:0;
   }
   .skills-cont{
-    padding: 60px;
+    padding: 20px;
     height: auto;
     .overlay{
       height: auto;
@@ -26,16 +27,16 @@
     }
   }
 
-  .mobile-sec{
+  .Mobile-sec{
     background-image: url('../build/imgsopt/mobile_skills.jpg');
   }
-  .it-sec{
+  .Frameworks-sec{
     background-image: url('../build/imgsopt/it_skills.jpg');
   }
-  .design-sec{
+  .Design-sec{
     background-image: url('../build/imgsopt/design_skills.jpg');
   }
-  .code-sec{
+  .Development-sec{
     background-image: url('../build/imgsopt/coding_skills.jpg');
   }
 }

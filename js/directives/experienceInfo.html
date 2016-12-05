@@ -1,4 +1,5 @@
 <div class="expBox wow flipInX {{info.icon}}-exp">
+	<div class="overlay">
 	<span style="text-align:center;">
 		<p class="icon-container">
 			<i class="fa fa-{{info.icon}}"></i>
@@ -6,6 +7,7 @@
 		<h3 class="class-title">
 			<a ng-click="anim(); showDeets=!showDeets;">{{info.title}}</a>
 		</h3>
+		<hr>
 		<p>
 			{{info.date}}
 		</p>
@@ -13,6 +15,7 @@
 			{{info.description}}
 		</p>
 	</span>
-
+</div>
 	<div class="clear"></div>
+
 </div>

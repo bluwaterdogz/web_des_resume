@@ -1,7 +1,27 @@
-
-
-
-
+		<section id="skills" class="content" ng-controller="SkillsCtrl as skills">
+			<h2>Skills</h2>
+			<hr width="80%">
+			<div class="row">
+				<div class="skills-cont col-sm-6 " ng-repeat="skillType in skills.skillTypes">
+					<div class="{{skillType.name}}-sec">
+						<div class="overlay">
+							<span class="skills-icon"><i class="fa {{skillType.icon}}"></i></span>
+							<ul>
+								<li class="skills-list-item" ng-repeat="skill in skillType.skills">{{skill.skill}}</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr width="80%">
+			<p>
+				Other Languages & Frameworks: JSON, SCSS, Meteor.js, AngularJS
+				<br> IDE experience: Sublime Text, EMACs, Android Studio, XCode, PyCharm, MAMP
+			</p>
+		</section>
+	<div class="divider divider4">
+		<div class="overlay"></div>
+	</div>
 	<section id="education" class="content fluid-container" ng-controller="ExperienceCtrl as exps">
 		<h2>On Campus Classes</h2>
 		<h3>Click for more info</h3>
@@ -26,74 +46,6 @@
 		</div>
 	</section>
 
-	<div class="divider divider4">
-		<div class="overlay"></div>
-	</div>
-
-	<section id="skills" class="content" ng-controller="SkillsCtrl as skills">
-		<h2>Skills</h2>
-		<hr width="80%">
-		<div class="row">
-		<div class="skills-cont col-sm-6 ">
-			<div class="code-sec">
-			<div class="overlay">
-			<span class="skills-icon"><i class="fa fa-code"></i></span>
-			<ul>
-				<li class="skills-list-item">Python</li>
-				<li class="skills-list-item">Javascript/Jquery</li>
-				<li class="skills-list-item">Java</li>
-				<li class="skills-list-item">PHP</li>
-				<li class="skills-list-item">HTML5/CSS3</li>
-			</ul>
-</div>
-			</div>
-		</div>
-		<div class="skills-cont col-sm-6 ">
-			<div class="design-sec">
-			<div class="overlay">
-			<span class="skills-icon"><i class="fa fa-pencil"></i></span>
-			<ul>
-				<li class="skills-list-item">Photoshop</li>
-				<li class="skills-list-item">Illustrator</li>
-				<li class="skills-list-item">Foundation</li>
-				<li class="skills-list-item">Bootstrap</li>
-				<li class="skills-list-item">Sketch</li>
-			</ul>
-		</div>
-		</div>
-</div>
-		</div>
-		<div class="skills-cont col-sm-6 ">
-			<div class="mobile-sec">
-			<div class="overlay">
-			<span class="skills-icon"><i class="fa fa-mobile-phone"></i></span>
-
-		<ul>
-			<li class="skills-list-item">Android Studio</li>
-			<li class="skills-list-item">Java</li>
-			<li class="skills-list-item">Firebase</li>
-			<li class="skills-list-item">Xcode</li>
-			<li class="skills-list-item">Swift</li>
-		</ul>
-				</div>
-				</div>
-				</div>
-		<div class="skills-cont col-sm-6 ">
-			<div class="it-sec">
-			<div class="overlay">
-			<span class="skills-icon"><i class="fa fa-gears"></i></span>
-			<ul>
-				<li class="skills-list-item">Angular</li>
-				<li class="skills-list-item">Web2Py</li>
-				<li class="skills-list-item">Wordpress</li>
-				<li class="skills-list-item">Git</li>
-				<li class="skills-list-item">Gulp</li>
-			</ul>
-			</div>
-		</div>
-		</div>
-	</div>
-
 		<div class="langlist">
 			<div ng-repeat="skill in skills.collection">
 				<div>
@@ -103,11 +55,4 @@
 			</div>
 		</div>
 
-			<hr width="80%">
-			<p>
-				Other Languages & Frameworks: JSON, SCSS, Meteor.js, AngularJS
-				<br> IDE experience: Sublime Text, EMACs, Android Studio, XCode, PyCharm, MAMP
-			</p>
-
 		</div>
-	</section>

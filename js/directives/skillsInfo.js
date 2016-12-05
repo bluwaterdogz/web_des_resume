@@ -1,17 +1,6 @@
-app.directive('skillsInfo', function() {
+app.directive('skills',function(){
   return {
-    restrict: 'E',
-    scope: {
-      info: '='
-    },
-    templateUrl: 'js/directives/skillsInfo.html',
-
-    link: function(scope){
-      scope.likes = 0;
-
-      scope.addLike = function(){
-        scope.likes++;
-      };
-    }
+    restrict:"E",
+    templateUrl:'js/directives/skills.html'
   };
 });

@@ -1,42 +1,126 @@
 [
   {
-    "id":1,
-    "title":"HTML5/CSS",
-    "langLvl":4,
-    "description":"Web-Publishing 1, 2 & 30 Days to Learn HTML & CSS",
-    "likes":0,
-    "icon":"fa-pencil"
+    "name":"Development",
+    "icon":"fa-pencil",
+    "skills":[
+      {
+        "skill":"Python",
+        "likes":0,
+        "classes":"none"
+      },
+      {
+        "skill":"Javascript/Jquery",
+        "likes":0,
+        "classes":"none"
+      },
+      {
+        "skill":"Java",
+        "likes":0,
+        "classes":"none"
+      },
+      {
+        "skill":"PHP",
+        "likes":0,
+        "classes":"none"
+      },
+      {
+        "skill":"HTML5/CSS3",
+        "likes":0,
+        "classes":"none"
+      }
+    ]
   },
   {
-    "id":2,
-    "title":"Javascript/Jquery/AJAX",
-    "langLvl":3,
-    "description":"Intro to Programming with Javascript, Code Academy: Javascript & AngularJS, 30 Days to Learn jQuery, CodeSchool AngularJS, Scotch.io Meteor.js Tutorials & Eloquent Javasctipt",
-    "likes":0,
-    "icon":"fa-code"
+    "name":"Design",
+    "icon":"fa-pencil",
+    "skills":[
+      {
+        "skill":"Photoshop",
+        "likes":0,
+        "classes":"none"
+      },
+      {
+        "skill":"Illustrator",
+        "likes":0,
+        "classes":"none"
+      },
+      {
+        "skill":"Foundation",
+        "likes":0,
+        "classes":"none"
+      },
+      {
+        "skill":"Bootstrap",
+        "likes":0,
+        "classes":"none"
+      },
+      {
+        "skill":"Sketch",
+        "likes":0,
+        "classes":"none"
+      }
+    ]
   },
   {
-    "id":3,
-    "title":"Java/Swift",
-    "langLvl":2,
-    "description":"Introduction to Java using games and simulations, Mobile Programming: Android & iOS, Java Programming",
-    "likes":0,
-    "icon":"fa-code"
+    "name":"Mobile",
+    "icon":"fa-mobile-phone",
+    "skills":[
+      {
+        "skill":"Android Studio",
+        "likes":0,
+        "classes":"none"
+      },
+      {
+        "skill":"Java",
+        "likes":0,
+        "classes":"none"
+      },
+      {
+        "skill":"Firebase",
+        "likes":0,
+        "classes":"none"
+      },
+      {
+        "skill":"Xcode",
+        "likes":0,
+        "classes":"none"
+      },
+      {
+        "skill":"Swift",
+        "likes":0,
+        "classes":"none"
+      }
+    ]
   },
   {
-    "id":4,
-    "title":"Python",
-    "langLvl":2,
-    "description":"Web Applications, Code Academy: Python",
-    "likes":0,
-    "icon":"fa-code"
-  },
-  {
-    "id":5,
-    "title":"PHP/SQL",
-    "langLvl":1,
-    "description":"Introduction to Programming Database-Driven Websites With PHP",
-    "likes":0,
-    "icon":"fa-code"
+    "name":"Frameworks",
+    "icon":"fa-gears",
+    "skills":[
+      {
+        "skill":"Angular",
+        "likes":0,
+        "classes":"none"
+      },
+      {
+        "skill":"Web2Py",
+        "likes":0,
+        "classes":"none"
+      },
+      {
+        "skill":"Wordpress",
+        "likes":0,
+        "classes":"none"
+      },
+      {
+        "skill":"Git",
+        "likes":0,
+        "classes":"none"
+      },
+      {
+        "skill":"Gulp",
+        "likes":0,
+        "classes":"none"
+      }
+    ]
   }
 ]

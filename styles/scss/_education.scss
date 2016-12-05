@@ -1,0 +1,72 @@
+
+#education
+{
+    overflow: auto;
+
+      padding: 60px 0;
+    
+
+    .expBox
+    {
+        position: relative;
+
+        overflow: auto;
+
+        height: auto;
+        margin-bottom: 20px;
+
+
+        -webkit-transition: .5s;
+             -o-transition: .5s;
+                transition: .5s;
+        text-decoration: none;
+
+      -webkit-box-shadow: 0 0 10px 5px rgba(200,200,200,.8);
+      box-shadow: 0 0 10px 5px rgba(200,200,200,.8);
+        border: 3px black solid;
+
+      .icon-container{
+        font-size: 50px;
+        i{color:white;}
+      }
+      p{color:white;}
+      a{
+        color:white;
+        font-size: 70%;
+      }
+      hr{
+        border-color:white;
+        width:0;
+        opacity:0;
+        @include trans(500ms);
+      }
+      .overlay{
+        padding:10px;
+        background-color: rgba(0,0,0,.5);
+
+        @include trans(500ms);
+
+        }
+      &.code-exp{background-image: url('../build/imgsopt/coding_skills.jpg');}
+      &.gears-exp{background-image: url('../build/imgsopt/it_skills.jpg');}
+      &.pencil-exp{background-image: url('../build/imgsopt/design_skills.jpg');}
+      &.mobile-phone-exp{background-image: url('../build/imgsopt/mobile_skills.jpg');}
+      &:hover
+      {
+          border: 3px solid gold;
+          -webkit-box-shadow: 0 0 10px 10px rgba(200,200,200,.3);
+          box-shadow: 0 0 10px 10px rgba(200,200,200,.3);
+          -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+          transform: scale(1.05);
+          .overlay{
+            background-color: rgba(0,0,0,.9);
+            }
+            hr{
+              width:80%;
+              opacity:1;
+            }
+      }
+    }
+
+}

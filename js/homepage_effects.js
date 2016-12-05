@@ -1,9 +1,4 @@
  $(document).ready(function($) {
-	// $('#my_name, .titleheadline ').hide();
-  //
-	// $('#my_name').fadeIn(1000, function(){
-	// 	$('.titleheadline').fadeIn(2000);
-	// });
 
 	$(".project-title-cont li").mouseenter(function() {
 		var newImg = $(this).index();

@@ -6,14 +6,15 @@ Title: Main css page for Brian Velasquez's resume
 @import "resources/variables",
         "resources/mixins",
         "resources/fonts",
+        "global",
+        "animations",
         "splash",
         "about",
         "intro",
         "skills",
         "work",
         "projects",
-        "global",
-        "animations",
+        "education",
         "components/nav";
 
 
@@ -52,52 +53,6 @@ header li a
 
 
 
-
-/* Education */
-
-#education
-{
-    overflow: auto;
-}
-.expBox
-{
-    position: relative;
-
-    overflow: auto;
-
-    height: auto;
-    margin-bottom: 20px;
-    padding: 10px;
-
-    -webkit-transition: .5s;
-         -o-transition: .5s;
-            transition: .5s;
-    text-decoration: none;
-
-  -webkit-box-shadow: 0 0 10px 5px rgba(200,200,200,.8);
-  box-shadow: 0 0 10px 5px rgba(200,200,200,.8);
-    border: 3px black solid;
-  &.code-exp{background-image: url('../build/imgsopt/coding_skills.jpg');}
-  &.gears-exp{background-image: url('../build/imgsopt/it_skills.jpg');}
-  &.pencil-exp{background-image: url('../build/imgsopt/design_skills.jpg');}
-  &.mobile-phone-exp{background-image: url('../build/imgsopt/mobile_skills.jpg');}
-    .icon-container{
-      font-size: 50px;
-      i{color:white;}
-    }
-    p{color:white;}
-}
-.expBox:hover
-{
-    border: 3px solid gold;
-    -webkit-box-shadow: 0 0 10px 10px rgba(200,200,200,.3);
-    box-shadow: 0 0 10px 10px rgba(200,200,200,.3);
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
-}
-
-
 .content
 {
   -webkit-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.75);
@@ -115,10 +70,26 @@ header li a
     text-align: center;
 
     background-color: white;
+    p{
+      font-family:"Montserrat-thin";
+    }
+    h2{
+      padding:0;
+    }
+    hr{
+      border-color: black;
+    }
+
+}
+.statement-cont{
+  box-shadow: none;
+  margin:auto;
+  max-width:600px;
+  padding:80px 0;
 }
 .divider
 {
-    height: 500px;
+    height: 300px;
 
     text-align: center;
 
