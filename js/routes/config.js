@@ -3,7 +3,7 @@ app.config(function($stateProvider, $urlRouterProvider){
   $stateProvider
     .state('intro',{
       url:"/intro",
-      templateUrl:'../../views/intro.html'
+      templateUrl:'/web_des_resume/views/intro.html'
     })
     .state('splash',{
       url:"/",
@@ -12,19 +12,19 @@ app.config(function($stateProvider, $urlRouterProvider){
     })
     .state('skills',{
         url:"/skills",
-        templateUrl:'../../views/skills.html'
+        templateUrl:'/web_des_resume/views/skills.html'
     })
     .state('about',{
         url:"/about",
-        templateUrl:'../../views/about.html'
+        templateUrl:'/web_des_resume/views/about.html'
     })
     .state('experiences',{
         url: "/experiences",
         views: {
-            '': { templateUrl:'../../views/experiences.html'},
-            'work@experiences': { templateUrl: '../../views/work.html'},
+            '': { templateUrl:'/web_des_resume/views/experiences.html'},
+            'work@experiences': { templateUrl: '/web_des_resume/views/work.html'},
             'projects@experiences': {
-               templateUrl: '../../views/projects.html',
+               templateUrl: '/web_des_resume/views/projects.html',
                controller:'ProjectCtrl'
              }
         }
