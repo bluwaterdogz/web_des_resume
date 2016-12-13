@@ -7,7 +7,7 @@ app.config(function($stateProvider, $urlRouterProvider){
     })
     .state('splash',{
       url:"/",
-      templateUrl:'../../views/splash.html',
+      templateUrl:'/web_des_resume/views/splash.html',
       controller:'SplashCtrl'
     })
     .state('skills',{
