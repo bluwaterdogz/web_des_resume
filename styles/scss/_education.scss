@@ -4,7 +4,7 @@
     overflow: auto;
 
       padding: 60px 0;
-    
+
 
     .expBox
     {
@@ -53,7 +53,7 @@
       &.mobile-phone-exp{background-image: url('../build/imgsopt/mobile_skills.jpg');}
       &:hover
       {
-          border: 3px solid gold;
+          border: 3px solid white;
           -webkit-box-shadow: 0 0 10px 10px rgba(200,200,200,.3);
           box-shadow: 0 0 10px 10px rgba(200,200,200,.3);
           -webkit-transform: scale(1.05);

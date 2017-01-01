@@ -72,7 +72,7 @@ h3
 }
 .btn{
     font-size: 20px;
-    width: 100px;
+    // width: 100px;
 
     -webkit-transition: 500ms;
          -o-transition: 500ms;
@@ -123,10 +123,14 @@ h3
     -ms-flex-direction: column;
     flex-direction: column;
 }
+.row.is-flex.rev{
+  flex-direction:row-reverse;
+}
 
 @media (max-width:767px){
   body{
     .divider{height: 300px ;}
+    .divider6{min-height: 80vh ;height: auto;}
   }
 }
 @media (min-width:768px) and (max-width:992px){

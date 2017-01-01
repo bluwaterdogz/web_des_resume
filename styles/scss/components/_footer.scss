@@ -1,10 +1,19 @@
 
 /* footer */
-.footercontainer .disclaimer
+.content.footercontainer
 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 30px;
+    .disclaimer{
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding-top: 30px;
+  }
+.btn-group{
+      a.btn.writtenbtn{
+        border-bottom-left-radius: 5px;
+        border-top-left-radius:  5px;
+      }
+    }
+
 }
 .firstInfo
 {

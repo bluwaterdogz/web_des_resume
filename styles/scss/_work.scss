@@ -6,6 +6,10 @@
   background-size: cover;
   // background-position: fixed;
   background-attachment: fixed;
+  .overlay{
+    height:inherit;
+    background-color: rgba(0,0,0,.5)
+  }
   hr{
     border-color: white;
   }
@@ -14,7 +18,10 @@
       width:90%;
       max-width:1200px;
 
-    h2 {color: white;}
+    h2 {
+      color: white;
+
+    }
     .workexperience {
         margin: 50px 0;
         .sway {position: relative;}

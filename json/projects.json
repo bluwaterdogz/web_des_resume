@@ -6,8 +6,7 @@
   "technologies":["Javascript","PHP", "HTML5/SASS", "Git", "Gulp"],
   "description":"Launch Brigade needed a new, modern site to reflect the contemprary Development work they do. The responsive wordpress site I created for them reflects these modern values and abilities retaining SEO value and simplicity of content managment.",
   "img":"imgs/launchbrigade.jpg",
-  "url":"www.launchbrigade.com",
-  "project-url":""
+  "url":"https://www.launchbrigade.com"
   },
   {
   "title":"Tutors",
@@ -15,9 +14,7 @@
   "rolls":[ "Mobile Development", "Mobile Design", "UX/UI", "API Integration"],
   "technologies":["Git", "Android Studio", "Java", "XML", "Firebase"],
   "description":"This Mobile Application employs Firebase to create a Social Android application. Utilizing Geolocation, Chat Functionality, User Authentication, 2-way data binding and a modern design, it showcases my mobile development skills and also serves as a general purpose chasis which can be reskinned and expanded upon to serve a broad range of purposes.",
-  "img":"imgs/tutors.jpg",
-  "url":"",
-  "project-url":""
+  "img":"imgs/tutors.jpg"
   },
   {
   "title":"Boards Web2py App",
@@ -27,7 +24,7 @@
   "description":"This educational project utilizes the features of a modern web application. Utilizing User Authenticaiton, token authentication, link signatures, a Python MVC backend framework, and a modern 2 way binding Javascript Framework, it's a secure easy to use discussion board app that can be reskinned for any purpose.",
   "img":"imgs/boards.jpg",
   "url":"https://bluwaterdogz.pythonanywhere.com/Boards/default/index",
-  "project-url":"http://bluwaterdogz.github.io/DanWebsitePortfolio/"
+  "projectUrl":"http://bluwaterdogz.github.io/DanWebsitePortfolio/"
   },
   {
   "title":"Meteorjs Recipies",
@@ -36,8 +33,8 @@
   "technologies":["Git", "Meteorjs","HTML5/CSS3"],
   "description": "I created this secure Meteor based application for a group to use to store their recipes.",
   "img":"imgs/recipes.jpg",
-  "url":"http://resolutionsbv.meteor.com/",
-  "project-url":"https://github.com/bluwaterdogz/MeteorResolutions"
+  "url":"https://github.com/bluwaterdogz/MeteorResolutions",
+  "projectUrl":"https://github.com/bluwaterdogz/MeteorResolutions"
   },
   {
   "title":"Daniel V Art 2.0",
@@ -46,17 +43,16 @@
   "technologies":["HTML5/CSS3", "Squarespace"],
   "description":"Daniel Velasquez is a burgeoning artist in San Francisco trying to increase awareness of his multimedia masterpieces. This site and helped him to reach a broader audience, and retain a hub for communication about and promotion of his products.",
   "img":"imgs/dan.jpg",
-  "url":"www.danielvelasquezart.com",
-  "project-url":"http://bluwaterdogz.github.io/DanWebsitePortfolio/"
+  "url":"www.danielvelasquezart.com"
   },
   {
   "title":"James Sauter Portfolio",
   "type":"Website",
-  "img":"imgs/james2.jpg",
+  "img":"imgs/james_art_pic.jpg",
   "rolls":["Web Design", "Graphic Design", "Web Development", "Javascript Animations"],
   "technologies":["Javascript", "PHP", "HTML5/CSS3", "Git"],
   "description":"James Sauter's art is as abstract and unique as the artist himself, and he needed a site that showcased the distinctive quality of his art. This one of a kind static site accurately reflects the dynamism and otherworldly quality of his works.",
   "url":"http://bluwaterdogz.github.io/JamesStatic/",
-  "project-url":"http://bluwaterdogz.github.io/JamesStatic/"
+  "projectUrl":"https://github.com/bluwaterdogz/JamesStatic"
   }
 ]

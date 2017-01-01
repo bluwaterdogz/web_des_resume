@@ -1,7 +1,7 @@
 [
   {
     "name":"Development",
-    "icon":"fa-pencil",
+    "icon":"fa-code",
     "skills":[
       {
         "skill":"Python",

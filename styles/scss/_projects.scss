@@ -57,18 +57,24 @@
         background-size: cover;
         padding: 0;
         .overlay{
+          display:flex;
+          justify: center;
+          align-items: center;
           height:inherit;
           background-color: rgba(0,0,0,.3)
         }
         .title-cont{
-          position:absolute;
+          // position:absolute;
           width:100%;
-          top:40%;
+          // top:40%;
           h3{
             color:white;
             padding:0;
             a{
               color:white;
+              &:active,&:focus,&:visited,&:link{
+                text-decoration: none;
+              }
             }
             @include trans(500ms)
           }

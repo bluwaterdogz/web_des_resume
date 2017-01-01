@@ -16,7 +16,7 @@
               <div class="overlay">
                 <div class="title-cont">
                   <h3>
-                    <a class="project-title" href="{{proj.url}}" target="_blank">{{proj.title}} &nbsp </a><a href="{{proj.project-url}}" target="_blank"><i class="fa fa-github"></i></a>
+                    <a class="project-title" href="{{proj.url}}" target="_blank">{{proj.title}}</a><a ng-if="proj.projectUrl" href="{{proj.projectUrl}}" target="_blank">&nbsp<i class="fa fa-github"></i></a>
                   </h3>
                   <hr>
                 </div>
@@ -38,7 +38,25 @@
         </div>
       </div>
       <div ng-switch-default>
-        <div class="row is-flex">
+        <div class="row is-flex rev">
+          <div class="col-xs-12 col-sm-6 image-container">
+            <div class=" project-pic-cont" style="background-image:url({{proj.img}});">
+              <div class="overlay">
+                <div class="title-cont">
+                  <h3 ng-if="proj.url">
+                    <a class="project-title" href="{{proj.url}}" target="_blank">{{proj.title}}</a><a ng-if="proj.projectUrl" href="{{proj.projectUrl}}" target="_blank">&nbsp<i class="fa fa-github"></i></a>
+                  </h3>
+                  <h3 ng-if="!proj.url && proj.projectUrl">
+                    <a class="project-title" href="{{proj.projectUrl}}" target="_blank">{{proj.title}}</a><a ng-if="proj.projectUrl" href="{{proj.projectUrl}}" target="_blank">&nbsp<i class="fa fa-github"></i></a>
+                  </h3>
+                  <h3 ng-if="!proj.url && !proj.projectUrl">
+                    <span class="project-title" href="{{proj.projectUrl}}" target="_blank">{{proj.title}}</span><span ng-if="proj.projectUrl" href="{{proj.projectUrl}}" target="_blank">&nbsp<i class="fa fa-github"></i></span>
+                    </h3>
+                  <hr>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="col-xs-12 col-sm-6 description-container">
             <div class="row ">
               <div class="col-xs-12 col-sm-6 desc">
@@ -51,18 +69,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 image-container">
-            <div class=" project-pic-cont" style="background-image:url({{proj.img}});">
-              <div class="overlay">
-                <div class="title-cont">
-                  <h3>
-                    <a class="project-title" href="{{proj.url}}" target="_blank">{{proj.title}} &nbsp </a><a href="{{proj.project-url}}" target="_blank"><i class="fa fa-github"></i></a>
-                  </h3>
-                  <hr>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
