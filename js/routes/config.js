@@ -3,62 +3,63 @@
 //   $stateProvider
 //     .state('intro',{
 //       url:"/intro",
-//       templateUrl:'/web_des_resume/views/intro.html'
+//       templateUrl:'/views/intro.html'
 //     })
 //     .state('splash',{
 //       url:"/",
-//       templateUrl:'/web_des_resume/views/splash.html',
+//       templateUrl:'/views/splash.html',
 //       controller:'SplashCtrl'
 //     })
 //     .state('skills',{
 //         url:"/skills",
-//         templateUrl:'/web_des_resume/views/skills.html'
+//         templateUrl:'/views/skills.html'
 //     })
 //     .state('about',{
 //         url:"/about",
-//         templateUrl:'/web_des_resume/views/about.html'
+//         templateUrl:'/views/about.html'
 //     })
 //     .state('experiences',{
 //         url: "/experiences",
 //         views: {
-//             '': { templateUrl:'/web_des_resume/views/experiences.html'},
-//             'work@experiences': { templateUrl: '/web_des_resume/views/work.html'},
+//             '': { templateUrl:'/views/experiences.html'},
+//             'work@experiences': { templateUrl: '/views/work.html'},
 //             'projects@experiences': {
-//                templateUrl: '/web_des_resume/views/projects.html',
+//                templateUrl: '/views/projects.html',
 //                controller:'ProjectCtrl'
 //              }
 //         }
 //     });
 // });
 
-
 app.config(function($stateProvider, $urlRouterProvider){
-  $urlRouterProvider.otherwise("/");
+  var BASE_PATH = "/web_des_resume";
+  // var BASE_PATH = "";
+  $urlRouterProvider.otherwise(BASE_PATH);
   $stateProvider
     .state('intro',{
-      url:"/intro",
+      url:BASE_PATH+"/intro",
       templateUrl:'/views/intro.html'
     })
     .state('splash',{
-      url:"/",
-      templateUrl:'/views/intro.html',
+      url:BASE_PATH,
+      templateUrl:BASE_PATH+'/views/intro.html',
       controller:'SplashCtrl'
     })
     .state('skills',{
-        url:"/skills",
-        templateUrl:'/views/skills.html'
+        url:BASE_PATH+"/skills",
+        templateUrl:BASE_PATH+'/views/skills.html'
     })
     .state('about',{
-        url:"/about",
-        templateUrl:'/views/about.html'
+        url:BASE_PATH+"/about",
+        templateUrl:BASE_PATH+'/views/about.html'
     })
     .state('experiences',{
-        url: "/experiences",
+        url: BASE_PATH+"/experiences",
         views: {
-            '': { templateUrl:'/views/experiences.html'},
-            'work@experiences': { templateUrl: '/views/work.html'},
+            '': { templateUrl:BASE_PATH+'/views/experiences.html'},
+            'work@experiences': { templateUrl: BASE_PATH+'/views/work.html'},
             'projects@experiences': {
-               templateUrl: '/views/projects.html',
+               templateUrl: BASE_PATH+'/views/projects.html',
                controller:'ProjectCtrl'
              }
         }
