@@ -1,19 +1,17 @@
 
 /* footer */
-.content.footercontainer
-{
-    .disclaimer{
-      margin-top: 0px;
-      margin-bottom: 0px;
-      padding-top: 30px;
+.content.footercontainer{
+  .disclaimer{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 30px;
   }
-.btn-group{
-      a.btn.writtenbtn{
-        border-bottom-left-radius: 5px;
-        border-top-left-radius:  5px;
-      }
+  .btn-group{
+    .writtenbtn{
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px;
     }
-
+  }
 }
 .firstInfo
 {
