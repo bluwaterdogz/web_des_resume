@@ -7,12 +7,11 @@ var gulp = require('gulp'),
   sass = require('gulp-sass'),
   autoprefixer = require('gulp-autoprefixer'),
   concatCss = require('gulp-concat-css'),
+  concat = require('gulp-concat'),
   minifyCss = require('gulp-minify-css'),
   plumber = require('gulp-plumber'),
   browsersync = require('browser-sync'),
-  merge = require('merge-stream'),
-  pngquant = require('imagemin-pngquant'),
-  imageop = require('gulp-image-optimization');
+  merge = require('merge-stream');
 
 // Default
 gulp.task('default', ['scripts', 'styles']);
@@ -39,12 +38,13 @@ gulp.task('watch', function() {
 // Tasks
 // TODO
 gulp.task('scripts',function(){
-//   gulp.src('js/**/*.js')
-//   .pipe(plumber())
-//   .pipe(uglify())
-//   .pipe(plumber.stop())
-//   .pipe(gulp.dest('build/js'))
-//   .pipe(browsersync.stream({match: '**/*.js'}));
+  gulp.src(['js/**/*.js', "!js/vendor/**/*"])
+  .pipe(plumber())
+  .pipe(concat("app.js"))
+  // .pipe(uglify())
+  .pipe(plumber.stop())
+  .pipe(gulp.dest('build'))
+  .pipe(browsersync.stream({match: '**/*.js'}));
 });
 
 gulp.task('styles', function() {
@@ -74,14 +74,3 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('../react_resume/'))
     .pipe(browsersync.stream());
 });
-
-//gulp.task('images', function() {
-
-  //return gulp.src("imgs/*")
-    //.pipe(imageop({
-      //      optimizationLevel: IMAGE_OPT_LVL,
-          //  progressive: true,
-        //    interlaced: true
-       // }))
-    //.pipe(gulp.dest('build/imgsopt'));
-//});

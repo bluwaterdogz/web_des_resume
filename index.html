@@ -9,7 +9,8 @@
 	<!-- Jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script>
-		window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"/>')
+		window.jQuery || document.write('<script src="./bower_components/jquery/dist/jquery.min.js"/>')
+
 	</script>
 	<!-- Angular -->
 	<script src="bower_components/angular/angular.min.js"></script>
@@ -18,8 +19,8 @@
 	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 	<!-- <script src="bower_components/ngtouch/build/ngtouch.min.js"></script> -->
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script>
 	var bootstrap_enabled = (typeof $().modal == 'function');
 	bootstrap_enabled || document.write(
@@ -97,34 +98,35 @@
 			<p class="disclaimer">All pictures have Creative Commons license or taken by the designer unless otherwise noted.</p>
 		</div>
 	</footer>
-	<!-- Modules -->
+	<script src="build/app.js"></script>
+	<!--
 	<script src="js/app.js"></script>
 
-	<!-- Controllers -->
 	<script src="js/controllers/experiencectrl.js"></script>
 	<script src="js/controllers/skillsCtrl.js"></script>
 	<script src="js/controllers/projectCtrl.js"></script>
 	<script src="js/controllers/splashCtrl.js"></script>
 
-	<!-- Directives -->
+
 	<script src="js/directives/experienceInfo.js"></script>
 	<script src="js/directives/skillsInfo.js"></script>
 	<script src="js/directives/navBar.js"></script>
-	<!-- Services -->
+
 	<script src="js/services/classesService.js"></script>
 	<script src="js/services/projectService.js"></script>
 	<script src="js/services/skillsService.js"></script>
-	<!-- Filters -->
+
 	<script src="js/filters/threeColumnFilter.js"></script>
-	<!-- Router-->
+
 	<script src="js/routes/config.js"></script>
+	 -->
 	<!-- WOW -->
-	<script src="js/vendor/wow.min.js"></script>
+	<script src="./bower_components/wow/dist/wow.min.js"></script>
+
 	<script>
 		new WOW({
 			offset: 400
 		}).init();
 	</script>
-	<script src="js/homepage_effects.js"></script>
 </body>
 </html>

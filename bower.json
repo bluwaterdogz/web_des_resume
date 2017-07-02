@@ -18,10 +18,13 @@
   "dependencies": {
     "angular-resource": "~1.4.7",
     "ngtouch": "^1.0.1",
-    "angular-ui-router": "^1.0.5"
+    "angular-ui-router": "^1.0.5",
+    "wow": "^1.1.2",
+    "jquery": "^3.2.1"
   },
   "resolutions": {
     "angular": "1.5.8",
-    "angular-ui-router": "^1.0.5"
+    "angular-ui-router": "^1.0.5",
+    "jquery": "1.9.1 - 2"
   }
 }

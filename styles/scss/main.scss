@@ -92,6 +92,10 @@ header li a
 
     text-align: center;
 
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -ms-background-attachment: fixed;
+    -o-background-attachment: fixed;
     background-attachment: fixed;
     background-size: cover;
 }
