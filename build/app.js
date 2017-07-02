@@ -155,8 +155,8 @@ app.directive('skills',function(){
 });
 
 app.config(function($stateProvider, $urlRouterProvider){
-  // var BASE_PATH = "/web_des_resume";
-   var BASE_PATH = ""; // for testing:
+  var BASE_PATH = "/web_des_resume";
+  //  var BASE_PATH = ""; // for testing:
   $urlRouterProvider.otherwise(BASE_PATH);
   $stateProvider
     .state('intro',{
