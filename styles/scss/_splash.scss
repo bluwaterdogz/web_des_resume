@@ -56,7 +56,6 @@ padding:0;
     margin:20px 5px;
     z-index: 20;
     position: relative;
-
     font-family: 'Montserrat-Thin';
   }
   hr, i, p{position: relative;}
@@ -103,10 +102,14 @@ padding:0;
   .divider{
       background-size: 100vw 100vh;
   }
-  .divider1{
+  #divider1{
       height: 55vh;
       text-align: center;
       background-size: 100vh 100vh;
+      .btn-white{
+      display: inline-block;
+      margin:10px 5px;
+      }
   }
   #title-box h3.titleheadline{
       font-size: 5vw;

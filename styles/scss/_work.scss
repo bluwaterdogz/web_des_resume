@@ -1,14 +1,15 @@
 /* Work Experience */
 #experience {
   background-color:$third-color;
-  padding:60px 0;
-  background-image: url("../imgs/test.jpeg");
+
+  box-shadow:none;
+  background-image: url('../build/imgsOpt/test.jpeg');
   background-size: cover;
-  // background-position: fixed;
   background-attachment: fixed;
   .overlay{
+    padding:80px 0;
     height:inherit;
-    background-color: rgba(0,0,0,.5)
+    background-color: rgba(40,40,50,1)
   }
   hr{
     border-color: white;

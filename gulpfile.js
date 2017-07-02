@@ -4,7 +4,6 @@ var IMAGE_OPT_LVL = 12;
 // Dependencies
 var gulp = require('gulp'),
   uglify = require('gulp-uglify'),
-  // concat = require('gulp-concat'),
   sass = require('gulp-sass'),
   autoprefixer = require('gulp-autoprefixer'),
   concatCss = require('gulp-concat-css'),
@@ -12,13 +11,11 @@ var gulp = require('gulp'),
   plumber = require('gulp-plumber'),
   browsersync = require('browser-sync'),
   merge = require('merge-stream'),
-  // util = require('gulp-util'),
-  //imagemin = require('gulp-imagemin'),
   pngquant = require('imagemin-pngquant'),
   imageop = require('gulp-image-optimization');
 
 // Default
-gulp.task('default', ['scripts', 'styles','watch']);
+gulp.task('default', ['scripts', 'styles']);
 
 // Watch
 gulp.task('watch', function() {
@@ -73,8 +70,9 @@ gulp.task('styles', function() {
     .pipe(minifyCss({compatibility: 'ie8'}))
     .pipe(plumber.stop())
     .pipe(gulp.dest('.'))
+    // comment out if you are not me :)
+    .pipe(gulp.dest('../react_resume/'))
     .pipe(browsersync.stream());
-
 });
 
 //gulp.task('images', function() {

@@ -49,71 +49,54 @@
 			a.src = g;
 			m.parentNode.insertBefore(a, m)
 		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
 		ga('create', 'UA-71635535-1', 'auto');
 		ga('send', 'pageview');
 	</script>
 </head>
-
 <body ng-app="ResumeApp">
 	<nav-bar></nav-bar>
 	<div ng-controller="SplashCtrl" id = "divider1" class=" divider" ng-swipe-right="$scope.swipeRight()" ng-swipe-left="$scope.swipeLeft()">
-	  <!-- from https://vimeo.com/115082758 -->
-
 	<video src="build/video/forst-trim.mp4" autoplay loop muted></video>
 	  <div class="overlay flexbox-container">
-
 	    <div id="title-cont" >
 	      <div id="title-box" >
 	        <h1 id="my_name" class=" ">Brian Velasquez</h1>
 	        <h3 class="titleheadline " style="margin-top:0px;">Front End Web Developer</h3>
 	        <hr>
-
 	        <p>choose one and scroll down for more info</p>
-
 	        <a ui-sref="skills" class="btn-white">See the skills.</a>
 	        <a ui-sref="experiences" class="btn-white">See the Work.</a>
 	        <a ui-sref="about" class="btn-white">About me.</a>
 	        <a href="https://github.com/bluwaterdogz" class="btn-white">See the Code.</a>
-
-	        <i class="fa fa-arrow-down"></i>
+					<!-- <a href="http://bluwaterdogz.github.io/react_resume/" class="btn-white">React Version.</a> -->
 	      </div>
 	    </div>
 	  </div>
 	</div>
-
 	<div ui-view></div>
-	<div class="divider divider6">
-	  <div class="overlay">
-							<div class="profcont bounceIn animated ">
-								<img src="build/imgsopt/me.jpg" alt="Hey this is a picture of me!" id="profPic">
-							</div>
-	  </div>
-	</div>
-
-	<footer class="content footercontainer">
-
-				<div class="btn-group">
-					<script>
-					document.write('<'+'a'+' class="writtenbtn btn btn-primary" '+'h'+'r'+'e'+'f'+'='+"'"+'m'+'a'+'&'+'#'+'1'+'0'
-						+'5'+';'+'l'+'t'+'&'+'#'+'1'+'1'+'1'+';'+'&'+'#'+'5'+'8'+';'+'%'+'6'+'2'+'v'+'e'+'&'+'#'+'1'
-						+'0'+'1'+';'+'d'+'y'+'&'+'#'+'6'+'4'+';'+'&'+'#'+'3'+'7'+';'+'&'+'#'+'5'+'4'+';'+'&'+'#'+'5'
-						+'5'+';'+'m'+'a'+'i'+'&'+'#'+'3'+'7'+';'+'6'+'C'+'&'+'#'+'4'+'6'+';'+'c'+'&'+'#'+'3'+'7'+';'
-						+'6'+'F'+'m'+"'"+'>'+'&'+'#'+'6'+'7'+';'+'o'+'&'+'#'+'1'+'1'+'0'+';'+'t'+'a'+'c'+'t'+' '+'M'
-						+'e'+'<'+'/'+'a'+'>');</script>
-
-					<a href="" class="backToTop btn btn-primary">Back to Top</a>
-				</div>
-
-				<noscript>Turn on JavaScript to see my email address ;P</noscript>
-
-
-		<p class="disclaimer">All pictures have Creative Commons license or taken by the designer unless otherwise noted.</p>
-
+	<footer class="content">
+		<div class="divider divider6">
+		  <div class="overlay">
+					<div class="profcont bounceIn animated ">
+						<img src="build/imgsopt/me.jpg" alt="Hey this is a picture of me!" id="profPic">
+					</div>
+		  </div>
+		</div>
+		<div class="footercontainer">
+			<div class="btn-group">
+				<script>
+				document.write('<'+'a'+' class="writtenbtn btn btn-primary" '+'h'+'r'+'e'+'f'+'='+"'"+'m'+'a'+'&'+'#'+'1'+'0'
+					+'5'+';'+'l'+'t'+'&'+'#'+'1'+'1'+'1'+';'+'&'+'#'+'5'+'8'+';'+'%'+'6'+'2'+'v'+'e'+'&'+'#'+'1'
+					+'0'+'1'+';'+'d'+'y'+'&'+'#'+'6'+'4'+';'+'&'+'#'+'3'+'7'+';'+'&'+'#'+'5'+'4'+';'+'&'+'#'+'5'
+					+'5'+';'+'m'+'a'+'i'+'&'+'#'+'3'+'7'+';'+'6'+'C'+'&'+'#'+'4'+'6'+';'+'c'+'&'+'#'+'3'+'7'+';'
+					+'6'+'F'+'m'+"'"+'>'+'&'+'#'+'6'+'7'+';'+'o'+'&'+'#'+'1'+'1'+'0'+';'+'t'+'a'+'c'+'t'+' '+'M'
+					+'e'+'<'+'/'+'a'+'>');</script>
+				<a href="" class="backToTop btn btn-primary">Back to Top</a>
+			</div>
+			<noscript>Turn on JavaScript to see my email address ;P</noscript>
+			<p class="disclaimer">All pictures have Creative Commons license or taken by the designer unless otherwise noted.</p>
+		</div>
 	</footer>
-	<!--
-		<?php include("includes/footer.php"); ?>
--->
 	<!-- Modules -->
 	<script src="js/app.js"></script>
 
@@ -127,19 +110,14 @@
 	<script src="js/directives/experienceInfo.js"></script>
 	<script src="js/directives/skillsInfo.js"></script>
 	<script src="js/directives/navBar.js"></script>
-
 	<!-- Services -->
 	<script src="js/services/classesService.js"></script>
 	<script src="js/services/projectService.js"></script>
 	<script src="js/services/skillsService.js"></script>
-
 	<!-- Filters -->
 	<script src="js/filters/threeColumnFilter.js"></script>
-
 	<!-- Router-->
-
 	<script src="js/routes/config.js"></script>
-
 	<!-- WOW -->
 	<script src="js/vendor/wow.min.js"></script>
 	<script>
@@ -147,9 +125,6 @@
 			offset: 400
 		}).init();
 	</script>
-
 	<script src="js/homepage_effects.js"></script>
-	<!-- not implemented yet <script src="js/vendor/masonry.min.js"></script> -->
 </body>
-
 </html>
