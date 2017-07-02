@@ -72,5 +72,13 @@
     "date":"Spring 2016",
     "description":"Introduction to and analysis of Common Algorithms and Data srtuctures",
     "icon":"gears"
+  },
+  {
+    "id":10,
+    "title":"Introduction to Artificial Intelligence Algorithms",
+    "location":"UCSC",
+    "date":"Winter 2017",
+    "description":"Introduction to and implementation of common Artificial Intelligence Algorithms",
+    "icon":"gears"
   }
 ]
