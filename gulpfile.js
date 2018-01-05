@@ -70,7 +70,5 @@ gulp.task('styles', function() {
     .pipe(minifyCss({compatibility: 'ie8'}))
     .pipe(plumber.stop())
     .pipe(gulp.dest('.'))
-    // comment out if you are not me :)
-    .pipe(gulp.dest('../react_resume/'))
     .pipe(browsersync.stream());
 });
